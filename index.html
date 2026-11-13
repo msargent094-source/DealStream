@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#b82f38">
+  <meta name="description" content="A private, installable OzBargain RSS reader that hides deals you have already scrolled past.">
+  <meta name="color-scheme" content="light dark">
+  <title>DealStream — only deals you haven't seen</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="./icons/icon.svg">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero-top">
+        <div class="brand" aria-label="DealStream home">
+          <span class="brand-symbol" aria-hidden="true">↘</span>
+          <span>dealstream<span class="brand-dot">.</span></span>
+        </div>
+        <div class="header-actions">
+          <button class="icon-button hero-icon" type="button" id="refreshButton" title="Check for updates" aria-label="Check for updates">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5"/><path d="M4 17v-5h5"/><path d="M5.5 9a7 7 0 0 1 12-2L20 12M4 12l2.5 5a7 7 0 0 0 12-2"/></svg>
+          </button>
+          <button class="icon-button hero-icon" type="button" id="settingsButton" title="Settings" aria-label="Settings">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06-2 2-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V20h-2.82v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06-2-2 .06-.06a1.65 1.65 0 0 0 .33-1.82A1.65 1.65 0 0 0 6.09 14H6v-2.82h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06 2-2 .06.06a1.65 1.65 0 0 0 1.82.33 1.65 1.65 0 0 0 1-1.51V5h2.82v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06 2 2-.06.06a1.65 1.65 0 0 0-.33 1.82A1.65 1.65 0 0 0 21 11.18h.09V14H21a1.65 1.65 0 0 0-1.6 1Z" transform="translate(-1 -.5)"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="hero-main">
+        <p class="eyebrow">THE NEW-DEALS FEED, REIMAGINED</p>
+        <h1>Fresh deals.<br><em>Zero repeats.</em></h1>
+        <p class="hero-summary">Scroll once. See it once. Newest bargains always come first.</p>
+      </div>
+      <div class="hero-stats" aria-label="Your deals dashboard">
+        <div><strong id="unseenCount">—</strong><span>Unseen deals</span></div>
+        <div><strong id="seenCount">—</strong><span>Already viewed</span></div>
+        <div><strong id="savedCount">—</strong><span>Saved</span></div>
+      </div>
+    </header>
+
+    <main id="main">
+      <div id="banner" class="banner" role="status" aria-live="polite" hidden></div>
+      <section class="feed-section" aria-labelledby="feedTitle">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">YOUR PERSONAL FEED</p>
+            <h2 id="feedTitle">The deal feed</h2>
+          </div>
+          <span class="update-stamp" id="updateStamp">Loading deals…</span>
+        </div>
+
+        <div class="toolbar">
+          <div class="tabs" role="tablist" aria-label="Deal filters">
+            <button id="tab-unseen" role="tab" aria-selected="true" class="tab active" data-tab="unseen" type="button">Unseen <span id="tabUnseenCount" class="tab-count">0</span></button>
+            <button id="tab-all" role="tab" aria-selected="false" class="tab" data-tab="all" type="button">All</button>
+            <button id="tab-saved" role="tab" aria-selected="false" class="tab" data-tab="saved" type="button">Saved</button>
+          </div>
+          <label class="search-wrap" for="searchInput">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg>
+            <input id="searchInput" type="search" placeholder="Search deals, stores…" autocomplete="off" aria-label="Search deals and stores">
+          </label>
+        </div>
+        <div class="feed-meta">
+          <span id="resultCount">Loading…</span>
+          <span class="sort-indicator"><span class="status-dot"></span>Newest first</span>
+        </div>
+
+        <div id="dealList" class="deal-list" aria-label="Deals"></div>
+        <div id="loadMoreSentinel" class="load-more-sentinel" aria-hidden="true"></div>
+        <div id="emptyState" class="empty-state" hidden>
+          <div class="empty-illustration" aria-hidden="true">✦</div>
+          <h3 id="emptyTitle">You're all caught up!</h3>
+          <p id="emptyDescription">New deals will appear here when the feed updates.</p>
+          <button type="button" id="emptyAction" class="secondary-button">See all deals</button>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <span>Unofficial personal reader powered by the <a href="https://www.ozbargain.com.au/deals/feed" target="_blank" rel="noopener noreferrer">OzBargain RSS feed</a>.</span>
+      <span>Your viewed/saved history stays on this device.</span>
+    </footer>
+  </div>
+
+  <dialog id="settingsDialog" class="settings-dialog" aria-labelledby="settingsTitle">
+    <form method="dialog" class="dialog-inner">
+      <div class="dialog-head"><div><p class="section-kicker">MAKE IT YOURS</p><h2 id="settingsTitle">Settings</h2></div><button class="close-button" aria-label="Close settings" type="submit">✕</button></div>
+      <div class="setting-row"><div><strong>How seen deals work</strong><p>A deal is marked seen after you scroll past it, or when you open it. It stays visible until your next refresh or when you change tabs.</p></div></div>
+      <div class="setting-row"><div><strong>Back up your history</strong><p>Export your viewed and saved deals so you can restore them if you change phones.</p></div><div class="settings-buttons"><button type="button" class="secondary-button" id="exportButton">Export</button><button type="button" class="secondary-button" id="importButton">Import</button></div></div>
+      <div class="setting-row"><div><strong>Clear viewed deals</strong><p>Make all archived deals visible as unseen again. Your saved deals won't be affected.</p></div><button class="outline-danger" type="button" id="resetButton">Reset seen</button></div>
+      <div class="setting-row"><div><strong>About deal updates</strong><p>The host checks OzBargain's official RSS feed approximately every 15 minutes. GitHub scheduled jobs can run late. Refreshing here checks the most recently published snapshot, not the source directly.</p></div></div>
+      <input type="file" id="importFile" hidden accept="application/json,.json">
+      <p id="settingsMessage" class="settings-message" role="status"></p>
+    </form>
+  </dialog>
+  <script>if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));</script>
+</body>
+</html>
