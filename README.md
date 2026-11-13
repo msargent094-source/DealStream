@@ -60,3 +60,13 @@ Seen and saved storage keys remain unchanged, and backups include all previous i
 ## Colour schemes
 
 Tap the colour-palette icon beside Refresh to open Appearance. Select any of eight presets, or pick a custom colour; the colours update instantly without reloading, and the choice persists on this device. Light/dark/Follow phone is independent of the palette. Accessible contrast is adjusted automatically for controls and text. All existing history, saved deals, RSS polling and filters remain unchanged.
+
+## If automatic refreshes stop
+
+The GitHub Pages app can refresh its **published data**, but it cannot independently run the source-feed fetcher. If no GitHub Actions `schedule` events appear at all, the feed remains stale despite valid cron syntax and successful manual runs.
+
+- Run [Update deals and publish PWA](https://github.com/msargent094-source/DealStream/actions/workflows/refresh-pages.yml) → **Run workflow** to fetch immediately.
+- If scheduled runs never start, open that workflow's menu, disable it, then enable it again; check the Actions history for an event of type `schedule` after the next interval.
+- GitHub cron is best-effort and may skip runs. For consistent ten-minute freshness, use an independent scheduler or hosting backend. Do not expose a GitHub personal access token in this public repository.
+
+The seen/saved browsing history remains local to the phone; feed refreshes do not reset it.
