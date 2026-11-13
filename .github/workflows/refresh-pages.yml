@@ -1,8 +1,8 @@
 name: Update deals and publish PWA
 on:
   schedule:
-    # Best-effort ten-minute checks, offset from the start of each hour.
-    - cron: '7,17,27,37,47,57 * * * *'
+    # Best-effort ten-minute checks. Minute offset revised to re-register the schedule.
+    - cron: '8,18,28,38,48,58 * * * *'
   push:
     branches: [main]
   workflow_dispatch:
