@@ -20,7 +20,7 @@ class RefreshTests(unittest.TestCase):
         self.assertIn('window.setInterval(', app)
         self.assertIn('!document.hidden&&!st.loading', app)
         self.assertIn('st.pendingFeed={items:incoming,updated};', app)
-        self.assertIn('if(y<100 && st.pendingFeed)', app)
+        self.assertRegex(app,r'if\s*\(y\s*<\s*100\s*&&\s*st\.pendingFeed\)')
         for k in ['dealstream_seen_v1', 'dealstream_saved_v1', 'dealstream_saved_items_v2']:
             self.assertIn(k, app)
 

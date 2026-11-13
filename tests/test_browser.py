@@ -27,6 +27,8 @@ def markup(feed, storage=None):
       Object.defineProperty(window,'localStorage',{value:__testStore,configurable:true});
       Object.defineProperty(window,'sessionStorage',{value:__testStore,configurable:true});
       window.fetch = async ()=>({ok:true,json:async()=>window.__data});
+      window.__autoChecks=[];
+      window.setInterval=(fn,ms)=>{window.__autoChecks.push({fn,ms});return window.__autoChecks.length;};
     </script>'''.replace('FEED',json.dumps(feed)).replace('STORAGE',json.dumps(storage or {}))
     index=index.replace('<script src="./app.js" defer></script>',injection+'<script>'+(ROOT/'app.js').read_text()+'</script>')
     return index
@@ -74,6 +76,46 @@ def main():
         pg.locator('[data-tab="saved"]').click()
         assert 'Great deal 0' in pg.locator('.deal-card').first.inner_text()
         assert not errs,errs
+        # Verify 10-minute polling and that background updates do not jump the page.
+        auto_pg=b.new_page(viewport={'width':390,'height':844},device_scale_factor=2,has_touch=True,is_mobile=True)
+        auto_pg.on('pageerror',lambda x:errs.append(str(x)))
+        auto_pg.set_content(markup(dict(updatedAt=NOW.isoformat(),items=items(85))))
+        auto_pg.locator('.deal-card').first.wait_for()
+        assert auto_pg.evaluate('window.__autoChecks.length') == 2
+        assert auto_pg.evaluate('window.__autoChecks.some(x=>x.ms===600000)')
+        auto_pg.locator('.deal-card').first.locator('.card-action').first.click()
+        saved_before=auto_pg.evaluate('window.__storage.dealstream_saved_v1')
+        row=dict(id='999999',title='$9.99 Automatic refresh deal @ Test Store',
+            url='https://www.ozbargain.com.au/node/999999',
+            published=(NOW+dt.timedelta(minutes=2)).isoformat(),
+            merchant='Test Store',category='Electronics',description='Fresh deal')
+        auto_pg.evaluate("""(row)=>{
+          window.__clockOffset=600001;
+          const original=Date.now.bind(Date);
+          Date.now=()=>original()+window.__clockOffset;
+          window.__data.items.unshift(row);
+          window.__autoChecks.find(x=>x.ms===600000).fn();
+        }""",row)
+        auto_pg.wait_for_function("document.querySelector('.deal-card')?.dataset.dealId === '999999'")
+        assert auto_pg.evaluate('window.__storage.dealstream_saved_v1')==saved_before
+        auto_pg.evaluate('window.scrollTo(0, 1250)')
+        auto_pg.wait_for_function('window.scrollY>160')
+        next_row=dict(id='999998',title='$8.88 Second automatic refresh @ Test Store',
+            url='https://www.ozbargain.com.au/node/999998',
+            published=(NOW+dt.timedelta(minutes=3)).isoformat(),
+            merchant='Test Store',category='Electronics',description='Fresh deal 2')
+        auto_pg.evaluate("""(row)=>{
+          window.__clockOffset+=600001;
+          window.__data.items.unshift(row);
+          window.__autoChecks.find(x=>x.ms===600000).fn();
+        }""",next_row)
+        auto_pg.wait_for_function("document.querySelector('#banner').textContent.includes('new deal')")
+        assert auto_pg.evaluate("document.querySelector('.deal-card').dataset.dealId")=='999999'
+        assert auto_pg.evaluate('window.scrollY')>160
+        auto_pg.evaluate('window.scrollTo(0,0)')
+        auto_pg.wait_for_function("document.querySelector('.deal-card')?.dataset.dealId === '999998'")
+        assert auto_pg.evaluate('window.__storage.dealstream_saved_v1')==saved_before
+        auto_pg.close()
         pg.screenshot(path='/mnt/data/dealstream-v2-mobile-test.png',full_page=False)
         print('PASS: browser UI, archived saved records, filters, themes, seen history, no JS errors')
         b.close()

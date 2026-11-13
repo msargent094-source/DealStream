@@ -27,6 +27,7 @@
 
     <main id="main" class="main">
       <div id="banner" class="banner" role="status" hidden></div>
+      <div id="backupNudge" class="backup-nudge" hidden><span>Your browsing history lives on this phone. Consider backing it up.</span><button type="button" id="backupNudgeButton">Back up</button><button type="button" id="backupNudgeDismiss" aria-label="Remind me later">✕</button></div>
       <nav class="tabs" aria-label="Deal collections" role="tablist">
         <button type="button" role="tab" class="tab active" aria-selected="true" data-tab="unseen">Unseen <span id="tabUnseenCount" class="tab-count">0</span></button>
         <button type="button" role="tab" class="tab" aria-selected="false" data-tab="new">New <span id="tabNewCount" class="tab-count">0</span></button>
@@ -39,9 +40,11 @@
         <button type="button" class="tool-button layout-button" id="layoutButton" aria-label="Toggle compact deal cards">Compact</button>
       </div>
       <div class="feed-meta"><span id="resultCount">Loading…</span><span class="sort-indicator"><span class="status-dot"></span> Newest first</span></div>
+      <div class="feed-health" aria-live="polite"><span id="feedHealth" class="health-chip">Checking feed…</span><span id="feedDetail">Getting the published feed status</span></div>
       <div class="quick-actions" id="quickActions" hidden>
         <button type="button" id="resumeButton" class="chip-button" hidden>↳ Resume where I left off</button>
         <button type="button" id="clearFilterButton" class="chip-button" hidden>Clear filters ×</button>
+        <button type="button" id="matchOnlyButton" class="chip-button" aria-pressed="false" hidden>★ Favourite matches <span id="matchCount">0</span></button>
       </div>
       <div class="deal-list" id="dealList" aria-label="Deal feed"></div>
       <div id="loadMoreSentinel" class="load-more-sentinel" aria-hidden="true"></div>
@@ -59,6 +62,13 @@
       <label class="field-label" for="followedStoresInput">Followed stores</label><textarea id="followedStoresInput" rows="2" placeholder="Amazon, JB Hi-Fi (one per line)"></textarea>
       <label class="field-label" for="mutedStoresInput">Muted stores</label><textarea id="mutedStoresInput" rows="2" placeholder="Stores to hide (one per line)"></textarea>
       <label class="field-label" for="mutedKeywordsInput">Muted keywords</label><textarea id="mutedKeywordsInput" rows="2" placeholder="Terms to hide from titles or descriptions (one per line)"></textarea>
+      <label class="field-label" for="favoriteKeywordsInput">Favourite keywords</label><textarea id="favoriteKeywordsInput" rows="2" placeholder="robot vacuum, SSD, LEGO (one per line)"></textarea>
+      <label class="check-row"><input type="checkbox" id="quietAlertsCheckbox"> Quiet in-app alerts for newly matched deals</label>
+      <p class="setting-help">Matching deals are highlighted without changing newest-first ordering. Alerts appear only when DealStream is open, with no sound or background push notifications.</p>
+      <div class="field-label">Price filter (estimated from deal titles)</div>
+      <div class="setting-row"><label for="priceFilterSelect">Show prices</label><select id="priceFilterSelect"><option value="any">Any price</option><option value="free">Free deals</option><option value="under25">Under $25</option><option value="under50">Under $50</option><option value="under100">Under $100</option><option value="custom">Custom maximum</option></select></div>
+      <label class="field-label" for="customMaxInput">Custom maximum ($)</label><input type="number" id="customMaxInput" min="0" step="0.01" inputmode="decimal" placeholder="e.g. 75">
+      <p class="setting-help">Prices are inferred from titles; deals without a recognisable price are hidden when a price limit is selected.</p>
       <div class="field-label">Hidden categories</div><div class="category-grid" id="categoryFilters"></div>
       <div class="dialog-actions"><button type="button" class="secondary-button" id="resetFiltersButton">Reset filters</button><button type="button" class="primary-button" id="applyFiltersButton">Apply filters</button></div>
     </div>
@@ -78,15 +88,19 @@
       <div class="field-label">History and privacy</div>
       <div class="setting-actions"><button type="button" class="secondary-button" id="exportButton">Back up history</button><button type="button" class="secondary-button" id="importButton">Restore backup</button></div>
       <p class="setting-help">Backups include your seen deals, saved deals, saved titles and filter preferences. Everything stays on this device unless you export it.</p>
+      <div class="setting-actions"><button type="button" class="secondary-button" id="storageCheckButton">Check storage</button><button type="button" class="secondary-button" id="protectStorageButton">Protect storage</button></div>
+      <p class="setting-help" id="storageStatus" aria-live="polite">Your browsing data is stored locally.</p>
+      <p class="setting-help" id="backupStatus">Backup status unavailable</p>
       <button type="button" class="danger-button" id="resetButton">Reset seen history</button>
-      <div class="field-label">About updates</div><p class="setting-help">GitHub collects the OzBargain feed roughly every 15 minutes (schedules may run late). Refresh checks the most recently published snapshot, not OzBargain directly.</p>
+      <div class="field-label">About updates</div><p class="setting-help">GitHub collects the OzBargain feed roughly every 10 minutes (schedules may run late). The open app checks the published feed every 10 minutes. Refresh checks the most recently published snapshot, not OzBargain directly.</p>
       <p class="setting-help" id="settingsMessage" aria-live="polite"></p>
       <input type="file" id="importFile" hidden accept=".json,application/json">
     </div>
   </dialog>
 
+  <div id="updateNotice" class="update-notice" role="status" hidden><span>A new DealStream version is ready.</span><button id="installUpdateButton" type="button">Reload</button><button id="dismissUpdateButton" aria-label="Dismiss update notice" type="button">✕</button></div>
   <div id="toast" class="toast" role="status" aria-live="polite" hidden><span id="toastText"></span><button type="button" id="undoButton" hidden>Undo</button><button type="button" id="toastClose" aria-label="Dismiss message">✕</button></div>
   <button type="button" id="topButton" class="top-button" aria-label="Scroll to top" hidden>↑</button>
-  <script>if('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));</script>
+
 </body>
 </html>

@@ -25,7 +25,7 @@ class V2Tests(unittest.TestCase):
 
     def test_saved_snapshots_and_backup(self):
         self.assertIn('dealstream_saved_items_v2',self.js)
-        self.assertIn('version:2',self.js)
+        self.assertIn('version:3',self.js)
         self.assertIn('function archivedSaved()',self.js)
 
     def test_installation_manifest_valid(self):
