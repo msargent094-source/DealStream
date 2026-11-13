@@ -4,98 +4,89 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#b82f38">
-  <meta name="description" content="A private, installable OzBargain RSS reader that hides deals you have already scrolled past.">
-  <meta name="color-scheme" content="light dark">
-  <title>DealStream — only deals you haven't seen</title>
+  <meta name="description" content="A private OzBargain reader that shows you fresh deals without the repeats.">
+  <title>DealStream — Fresh deals, zero repeats</title>
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="icon" type="image/svg+xml" href="./icons/icon.svg">
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./icons/icon-192.png">
   <link rel="stylesheet" href="./styles.css">
   <script src="./app.js" defer></script>
 </head>
 <body>
   <div class="app-shell">
-    <header class="hero">
-      <div class="hero-top">
-        <div class="brand" aria-label="DealStream home">
-          <span class="brand-symbol" aria-hidden="true">↘</span>
-          <span>dealstream<span class="brand-dot">.</span></span>
-        </div>
+    <header class="app-header">
+      <div class="brand-row">
+        <a href="./" class="brand" aria-label="DealStream home"><span class="brand-mark">↘</span><span>DealStream<span class="brand-dot">.</span></span></a>
         <div class="header-actions">
-          <button class="icon-button hero-icon" type="button" id="refreshButton" title="Check for updates" aria-label="Check for updates">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5"/><path d="M4 17v-5h5"/><path d="M5.5 9a7 7 0 0 1 12-2L20 12M4 12l2.5 5a7 7 0 0 0 12-2"/></svg>
-          </button>
-          <button class="icon-button hero-icon" type="button" id="settingsButton" title="Settings" aria-label="Settings">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06-2 2-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V20h-2.82v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06-2-2 .06-.06a1.65 1.65 0 0 0 .33-1.82A1.65 1.65 0 0 0 6.09 14H6v-2.82h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06 2-2 .06.06a1.65 1.65 0 0 0 1.82.33 1.65 1.65 0 0 0 1-1.51V5h2.82v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06 2 2-.06.06a1.65 1.65 0 0 0-.33 1.82A1.65 1.65 0 0 0 21 11.18h.09V14H21a1.65 1.65 0 0 0-1.6 1Z" transform="translate(-1 -.5)"/></svg>
-          </button>
+          <button class="icon-button" type="button" id="refreshButton" aria-label="Check published feed for updates" title="Refresh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5M5.5 9a7 7 0 0 1 12-2L20 12M4 12l2.5 5a7 7 0 0 0 12-2"/></svg></button>
+          <button class="icon-button" type="button" id="settingsButton" aria-label="Settings" title="Settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19 13a7 7 0 0 0 0-2l2-1-2-4-2 1a8 8 0 0 0-2-1l-1-2h-4L9 6a8 8 0 0 0-2 1L5 6 3 10l2 1a7 7 0 0 0 0 2l-2 1 2 4 2-1a8 8 0 0 0 2 1l1 2h4l1-2a8 8 0 0 0 2-1l2 1 2-4z"/></svg></button>
         </div>
       </div>
-      <div class="hero-main">
-        <p class="eyebrow">THE NEW-DEALS FEED, REIMAGINED</p>
-        <h1>Fresh deals.<br><em>Zero repeats.</em></h1>
-        <p class="hero-summary">Scroll once. See it once. Newest bargains always come first.</p>
-      </div>
-      <div class="hero-stats" aria-label="Your deals dashboard">
-        <div><strong id="unseenCount">—</strong><span>Unseen deals</span></div>
-        <div><strong id="seenCount">—</strong><span>Already viewed</span></div>
-        <div><strong id="savedCount">—</strong><span>Saved</span></div>
-      </div>
+      <div class="header-meta"><span><strong id="unseenCount">—</strong> unseen</span><span class="meta-divider" aria-hidden="true"></span><span><strong id="newCount">—</strong> new since last visit</span><span class="meta-divider" aria-hidden="true"></span><span id="updateStamp">Loading deals…</span></div>
     </header>
 
-    <main id="main">
-      <div id="banner" class="banner" role="status" aria-live="polite" hidden></div>
-      <section class="feed-section" aria-labelledby="feedTitle">
-        <div class="section-header">
-          <div>
-            <p class="section-kicker">YOUR PERSONAL FEED</p>
-            <h2 id="feedTitle">The deal feed</h2>
-          </div>
-          <span class="update-stamp" id="updateStamp">Loading deals…</span>
-        </div>
-
-        <div class="toolbar">
-          <div class="tabs" role="tablist" aria-label="Deal filters">
-            <button id="tab-unseen" role="tab" aria-selected="true" class="tab active" data-tab="unseen" type="button">Unseen <span id="tabUnseenCount" class="tab-count">0</span></button>
-            <button id="tab-all" role="tab" aria-selected="false" class="tab" data-tab="all" type="button">All</button>
-            <button id="tab-saved" role="tab" aria-selected="false" class="tab" data-tab="saved" type="button">Saved</button>
-          </div>
-          <label class="search-wrap" for="searchInput">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg>
-            <input id="searchInput" type="search" placeholder="Search deals, stores…" autocomplete="off" aria-label="Search deals and stores">
-          </label>
-        </div>
-        <div class="feed-meta">
-          <span id="resultCount">Loading…</span>
-          <span class="sort-indicator"><span class="status-dot"></span>Newest first</span>
-        </div>
-
-        <div id="dealList" class="deal-list" aria-label="Deals"></div>
-        <div id="loadMoreSentinel" class="load-more-sentinel" aria-hidden="true"></div>
-        <div id="emptyState" class="empty-state" hidden>
-          <div class="empty-illustration" aria-hidden="true">✦</div>
-          <h3 id="emptyTitle">You're all caught up!</h3>
-          <p id="emptyDescription">New deals will appear here when the feed updates.</p>
-          <button type="button" id="emptyAction" class="secondary-button">See all deals</button>
-        </div>
-      </section>
+    <main id="main" class="main">
+      <div id="banner" class="banner" role="status" hidden></div>
+      <nav class="tabs" aria-label="Deal collections" role="tablist">
+        <button type="button" role="tab" class="tab active" aria-selected="true" data-tab="unseen">Unseen <span id="tabUnseenCount" class="tab-count">0</span></button>
+        <button type="button" role="tab" class="tab" aria-selected="false" data-tab="new">New <span id="tabNewCount" class="tab-count">0</span></button>
+        <button type="button" role="tab" class="tab" aria-selected="false" data-tab="saved">Saved <span id="tabSavedCount" class="tab-count">0</span></button>
+        <button type="button" role="tab" class="tab" aria-selected="false" data-tab="all">All</button>
+      </nav>
+      <div class="toolbar">
+        <label class="search-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><input type="search" id="searchInput" placeholder="Search deals or stores…" autocomplete="off" aria-label="Search deals or stores"></label>
+        <button type="button" class="tool-button" id="filtersButton" aria-label="Store and category filters">Filters <span id="filterCount" class="filter-count" hidden>0</span></button>
+        <button type="button" class="tool-button layout-button" id="layoutButton" aria-label="Toggle compact deal cards">Compact</button>
+      </div>
+      <div class="feed-meta"><span id="resultCount">Loading…</span><span class="sort-indicator"><span class="status-dot"></span> Newest first</span></div>
+      <div class="quick-actions" id="quickActions" hidden>
+        <button type="button" id="resumeButton" class="chip-button" hidden>↳ Resume where I left off</button>
+        <button type="button" id="clearFilterButton" class="chip-button" hidden>Clear filters ×</button>
+      </div>
+      <div class="deal-list" id="dealList" aria-label="Deal feed"></div>
+      <div id="loadMoreSentinel" class="load-more-sentinel" aria-hidden="true"></div>
+      <section id="emptyState" class="empty-state" hidden><div class="empty-illustration">✦</div><h2 id="emptyTitle">All caught up!</h2><p id="emptyDescription">New deals will appear here after the feed updates.</p><button type="button" class="secondary-button" id="emptyAction">Show all deals</button></section>
+      <p class="feed-status" id="feedStatus" aria-live="polite"></p>
     </main>
-    <footer class="site-footer">
-      <span>Unofficial personal reader powered by the <a href="https://www.ozbargain.com.au/deals/feed" target="_blank" rel="noopener noreferrer">OzBargain RSS feed</a>.</span>
-      <span>Your viewed/saved history stays on this device.</span>
-    </footer>
+    <footer class="site-footer">Unofficial personal reader of the <a href="https://www.ozbargain.com.au/deals/feed" target="_blank" rel="noopener noreferrer">OzBargain New Deals RSS feed</a>. Viewed history stays on this device.</footer>
   </div>
 
-  <dialog id="settingsDialog" class="settings-dialog" aria-labelledby="settingsTitle">
-    <form method="dialog" class="dialog-inner">
-      <div class="dialog-head"><div><p class="section-kicker">MAKE IT YOURS</p><h2 id="settingsTitle">Settings</h2></div><button class="close-button" aria-label="Close settings" type="submit">✕</button></div>
-      <div class="setting-row"><div><strong>How seen deals work</strong><p>A deal is marked seen after you scroll past it, or when you open it. It stays visible until your next refresh or when you change tabs.</p></div></div>
-      <div class="setting-row"><div><strong>Back up your history</strong><p>Export your viewed and saved deals so you can restore them if you change phones.</p></div><div class="settings-buttons"><button type="button" class="secondary-button" id="exportButton">Export</button><button type="button" class="secondary-button" id="importButton">Import</button></div></div>
-      <div class="setting-row"><div><strong>Clear viewed deals</strong><p>Make all archived deals visible as unseen again. Your saved deals won't be affected.</p></div><button class="outline-danger" type="button" id="resetButton">Reset seen</button></div>
-      <div class="setting-row"><div><strong>About deal updates</strong><p>The host checks OzBargain's official RSS feed approximately every 15 minutes. GitHub scheduled jobs can run late. Refreshing here checks the most recently published snapshot, not the source directly.</p></div></div>
-      <input type="file" id="importFile" hidden accept="application/json,.json">
-      <p id="settingsMessage" class="settings-message" role="status"></p>
-    </form>
+  <dialog id="filtersDialog" class="settings-dialog" aria-labelledby="filtersTitle">
+    <div class="dialog-inner">
+      <div class="dialog-head"><h2 id="filtersTitle">Tailor your feed</h2><button type="button" class="close-button" data-close="filtersDialog" aria-label="Close filters">✕</button></div>
+      <label class="check-row"><input type="checkbox" id="onlyFollowedCheckbox"> Only show followed stores</label>
+      <p class="setting-help">Tap the store name on a deal to quickly follow or unfollow it.</p>
+      <label class="field-label" for="followedStoresInput">Followed stores</label><textarea id="followedStoresInput" rows="2" placeholder="Amazon, JB Hi-Fi (one per line)"></textarea>
+      <label class="field-label" for="mutedStoresInput">Muted stores</label><textarea id="mutedStoresInput" rows="2" placeholder="Stores to hide (one per line)"></textarea>
+      <label class="field-label" for="mutedKeywordsInput">Muted keywords</label><textarea id="mutedKeywordsInput" rows="2" placeholder="Terms to hide from titles or descriptions (one per line)"></textarea>
+      <div class="field-label">Hidden categories</div><div class="category-grid" id="categoryFilters"></div>
+      <div class="dialog-actions"><button type="button" class="secondary-button" id="resetFiltersButton">Reset filters</button><button type="button" class="primary-button" id="applyFiltersButton">Apply filters</button></div>
+    </div>
   </dialog>
-  <script>if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));</script>
+
+  <dialog id="settingsDialog" class="settings-dialog" aria-labelledby="settingsTitle">
+    <div class="dialog-inner">
+      <div class="dialog-head"><h2 id="settingsTitle">Settings</h2><button type="button" class="close-button" data-close="settingsDialog" aria-label="Close settings">✕</button></div>
+      <div class="field-label">Appearance</div>
+      <div class="setting-row"><label for="themeSelect">Theme</label><select id="themeSelect"><option value="system">Follow phone</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
+      <div class="setting-row"><label for="fontSelect">Text size</label><select id="fontSelect"><option value="normal">Normal</option><option value="large">Large</option><option value="extra">Extra large</option></select></div>
+      <div class="setting-row"><label for="viewSelect">Deal card size</label><select id="viewSelect"><option value="compact">Compact</option><option value="detailed">Detailed</option></select></div>
+      <label class="check-row"><input type="checkbox" id="priceModeCheckbox"> Highlight prices in deal titles</label>
+      <div class="field-label">Browsing</div>
+      <div class="setting-row"><label for="thresholdSelect">Mark seen while scrolling</label><select id="thresholdSelect"><option value="early">Earlier</option><option value="normal">Balanced</option><option value="careful">Later (careful)</option></select></div>
+      <p class="setting-help">Deals you've scrolled past stay visible until you refresh, change tabs, or reopen. A horizontal swipe right marks seen; swipe left saves.</p>
+      <div class="field-label">History and privacy</div>
+      <div class="setting-actions"><button type="button" class="secondary-button" id="exportButton">Back up history</button><button type="button" class="secondary-button" id="importButton">Restore backup</button></div>
+      <p class="setting-help">Backups include your seen deals, saved deals, saved titles and filter preferences. Everything stays on this device unless you export it.</p>
+      <button type="button" class="danger-button" id="resetButton">Reset seen history</button>
+      <div class="field-label">About updates</div><p class="setting-help">GitHub collects the OzBargain feed roughly every 15 minutes (schedules may run late). Refresh checks the most recently published snapshot, not OzBargain directly.</p>
+      <p class="setting-help" id="settingsMessage" aria-live="polite"></p>
+      <input type="file" id="importFile" hidden accept=".json,application/json">
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden><span id="toastText"></span><button type="button" id="undoButton" hidden>Undo</button><button type="button" id="toastClose" aria-label="Dismiss message">✕</button></div>
+  <button type="button" id="topButton" class="top-button" aria-label="Scroll to top" hidden>↑</button>
+  <script>if('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));</script>
 </body>
 </html>

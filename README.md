@@ -1,53 +1,47 @@
-# DealStream — new OzBargain deals, minus the repeats
+# DealStream v2 — fresh OzBargain deals, zero repeats
 
-A small, installable Android/web PWA. It uses the **official OzBargain New Deals RSS feed** (not the curated front-page feed) and displays deals newest first. It stores viewed and bookmarked deal IDs privately in your browser's local storage.
+An installable, mobile-first Android PWA using the [official OzBargain New Deals RSS feed](https://www.ozbargain.com.au/deals/feed). It isn't affiliated with OzBargain.
 
-## Features
+Live app: <https://msargent094-source.github.io/DealStream/>
 
-- Scroll past a deal to mark it as seen. It is **not removed during your current scrolling session**, only when you refresh, reopen, change tabs, or explicitly update the list.
-- Tabs for **Unseen**, **All** (with Unsee), and **Saved**.
-- Search titles, stores and descriptions; tap to open the original OzBargain post.
-- View/history counter, installable home-screen icon, light/dark mode, offline app shell.
-- Export/import seen and saved history for phone migrations.
-- No login, analytics, external scripts, subscriptions or fees.
+## New in v2
 
-## Deploy for free with GitHub Pages
+- **Compact, phone-first layout** with a sticky tab bar, compact/detailed cards and large tap targets.
+- **Automatic seen tracking.** As you genuinely scroll past a deal it is remembered; it remains on-screen in the current session until you refresh, switch tabs or reopen. Swipe right on a card to mark it seen, or swipe left to save; Undo is offered.
+- **Four views:** Unseen, New since last visit, Saved, and All. New refers to deals published after your preceding visit. The first visit has no baseline, so New begins at zero.
+- **Tailored feed:** follow stores by tapping their names; optionally show followed stores only; mute stores, keywords or entire categories. Saved deals remain available despite feed filters.
+- **Persistent saved deals:** the device stores a copy of saved titles and links, so saved cards survive the 60-day rolling public archive. Existing v1 saved IDs are upgraded automatically when their source cards are available; an old ID with no metadata displays a fallback link.
+- **Browsing conveniences:** resume anchor, scroll-to-top, seen threshold (earlier/balanced/later), search, infinite paging.
+- **Personalisation:** automatic/light/dark theme, three font sizes, detailed/compact cards, price highlighting.
+- **Clear update information:** source feed check time is separate from when your app last fetched the published snapshot. Refresh never claims to query OzBargain instantly.
+- **Privacy:** all your seen records, saved records and preferences stay in browser storage. Export/import a v1 or v2 JSON backup; no account or subscription.
 
-**A public repository is required for GitHub Pages on a GitHub Free personal account.** The data is public OzBargain RSS content; your personal seen/saved history never leaves your phone. The repository will contain code plus a rolling archive of public deals.
+## Install on Android
 
-1. Create a **new public GitHub repository**, e.g. `DealStream` (default branch `main`). Do not initialise it with a README if you plan to upload this package via GitHub web UI.
-2. Unzip the project and upload all project **contents**, including the `.github` folder, to the repository root. GitHub's web uploader may omit hidden folders, so verify `.github/workflows/refresh-pages.yml` is present; if it isn't, add it separately using the GitHub web editor.
-3. In the repository go to **Settings → Pages → Build and deployment → Source → GitHub Actions**.
-4. Go to **Actions → Update deals and publish PWA → Run workflow**, selecting `main`. The workflow downloads the official RSS feed, tests it, archives it, and deploys the app. Make sure Actions are enabled for the repository.
-5. The workflow summary's `github-pages` deployment shows your URL, typically `https://YOUR-USERNAME.github.io/DealStream/`.
-6. Open that URL in **Chrome on Android**, tap **⋮ → Add to Home screen → Install** (wording varies). Once installed it launches as a standalone app.
+Open <https://msargent094-source.github.io/DealStream/> in Chrome, tap **⋮ → Add to home screen → Install**. Existing installations upgrade automatically once the new service worker becomes active. If the old view remains, close and reopen the PWA, or refresh the page.
 
-The source feed is checked about every 15 minutes via a GitHub Actions scheduled workflow. GitHub schedules are **best-effort** and may be delayed or skipped under load; refresh in the app rereads the last published data snapshot, not the RSS source directly. The site's RSS feed contains recent items only; the archive starts from your first successful workflow run and retains up to 60 days of deals (max 8,000). Deals older than the archive retention period won't be browsable, but seen/saved records can remain on your phone. Bookmarked deals whose source items have expired may temporarily not show up in the Saved list; you can still export the saved IDs.
+## Hosting & feeds
 
-**If scheduled updates stop**: GitHub disables scheduled workflows on some inactive public repositories after 60 days without activity. Re-enable the workflow in the Actions tab. OzBargain may also throttle/block feed requests or change its format; existing deployed content stays available if an update fails.
+GitHub Pages hosts the static PWA. `.github/workflows/refresh-pages.yml` checks the RSS feed about every 15 minutes. This GitHub Actions schedule is best effort and may be delayed. It retains a rolling archive for 60 days, maximum 8,000 public posts. The PWA itself never scrapes or logs into OzBargain. Pressing Refresh loads the latest **published GitHub Pages snapshot**, not the RSS feed directly.
 
-## Running and testing locally
+## Tests
 
-Requires Python 3, with no packages to install.
+Python's built-in parser and packaging tests:
 
-```bash
+```sh
 python -m unittest discover -s tests -v
-python scripts/update_feed.py  # requires internet access to fetch live RSS
-python -m http.server 8000
+node --check app.js
+node --check sw.js
 ```
 
-Open `http://localhost:8000`. For a no-network demonstration of the parser, use:
+An optional local mobile Chromium smoke test requires Playwright and Chromium:
 
-```bash
-python scripts/update_feed.py --fixture tests/fixtures/sample.xml --output /tmp/dealstream-fixture.json
+```sh
+python tests/test_browser.py
 ```
 
-The fixture is synthetic test data, **not real deals**; it isn't shipped as the deployed feed.
+The mobile test uses a synthetic data fixture, not live OzBargain, and covers browsing, persistent saved cards, filters, appearance and seen history.
 
-## Privacy and limitations
+## Data & compatibility
 
-- Seen/saved history is local to the installed PWA/browser on each device; it doesn't sync automatically between phones or between Chrome and other browsers.
-- Clearing browser site storage or uninstalling may erase your history. Export a backup first.
-- Installation and offline support require a secure HTTPS origin; GitHub Pages provides HTTPS.
-- Offline access depends on a successfully cached feed; if you open the app before the first refresh while offline, cards may be unavailable.
-- An unofficial, personal RSS reader, not endorsed or operated by OzBargain. Headlines and previews belong to their original authors; open deal links to read full posts.
+v1 keys `dealstream_seen_v1`, `dealstream_saved_v1`, and `dealstream_tab_v1` are **unchanged**. v2 adds preference, snapshot, resume and last-visit keys without deleting existing records. No server-side account is required. Clearing browser/PWA site storage or uninstalling may delete personal history, so export it first if switching phones. There is currently **no cross-device sync**. RSS previews may omit content from the full OzBargain post; tap **Open** for the original.
