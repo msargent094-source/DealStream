@@ -1,0 +1,26 @@
+{
+  "id": "./",
+  "name": "DealStream — Unseen OzBargain Deals",
+  "short_name": "DealStream",
+  "description": "Browse new OzBargain deals without seeing the same ones twice.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f5f3ef",
+  "theme_color": "#b92e3d",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
