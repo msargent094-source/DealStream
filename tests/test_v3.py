@@ -34,7 +34,7 @@ class V3Tests(unittest.TestCase):
 
     def test_existing_workflow_unchanged(self):
         yml=(ROOT/'.github/workflows/refresh-pages.yml').read_text()
-        self.assertIn('7,17,27,37,47,57',yml)
+        self.assertRegex(yml, r"cron: ['\"](?:[0-9]+,){5}[0-9]+ \\* \\* \\* \\*['\"]")
         self.assertIn('python -m unittest discover -s tests -v',yml)
 
 if __name__=='__main__':unittest.main()

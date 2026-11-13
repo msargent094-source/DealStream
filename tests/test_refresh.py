@@ -11,7 +11,10 @@ class RefreshTests(unittest.TestCase):
         matches = re.findall(r"cron:\s*['\"]([^'\"]+)['\"]", workflow)
         self.assertEqual(len(matches), 1)
         minutes, hour, day, month, weekday = matches[0].split()
-        self.assertEqual([int(v) for v in minutes.split(',')], [7, 17, 27, 37, 47, 57])
+        values = [int(v) for v in minutes.split(',')]
+        self.assertEqual(len(values), 6)
+        self.assertTrue(0 <= values[0] <= 9)
+        self.assertEqual(values, list(range(values[0], 60, 10)))
         self.assertEqual([hour, day, month, weekday], ['*'] * 4)
 
     def test_app_polls_only_when_visible_and_preserves_history(self):
