@@ -14,7 +14,7 @@
   const HISTORY_REMINDER_MS = 30 * 24 * 60 * 60 * 1000;
   const CHUNK = 40;
   const REFRESH_INTERVAL_MS = 10 * 60 * 1000;
-  const DEFAULT = {theme:'system',font:'normal',view:'compact',priceMode:true,threshold:'normal',onlyFollowed:false,followedStores:[],mutedStores:[],mutedKeywords:[],hiddenCategories:[],favoriteKeywords:[],quietAlerts:true,priceFilter:'any',customMax:''};
+  const DEFAULT = {palette:'red',customAccent:'#b92e3d',theme:'system',font:'normal',view:'compact',priceMode:true,threshold:'normal',onlyFollowed:false,followedStores:[],mutedStores:[],mutedKeywords:[],hiddenCategories:[],favoriteKeywords:[],quietAlerts:true,priceFilter:'any',customMax:''};
   const $ = selector => document.querySelector(selector);
   const $$ = selector => Array.from(document.querySelectorAll(selector));
   const read = key => { try { return localStorage.getItem(key); } catch { return null; } };
@@ -273,13 +273,87 @@
     $$('.tab').forEach(el=>{const active=el.dataset.tab===st.tab;el.classList.toggle('active',active);el.setAttribute('aria-selected',String(active));el.tabIndex=active?0:-1;});
     st.visible.clear();window.scrollTo(0,0);render(true);
   }
+
+  // Appearance stays in the existing preferences key; v1-v3 user data is untouched.
+  const PALETTES = Object.freeze({
+    red: ['OzBargain red','#b92e3d'],
+    ocean: ['Ocean blue','#1766bc'],
+    forest: ['Forest green','#1a7652'],
+    violet: ['Violet','#7548bb'],
+    teal: ['Teal','#0b767a'],
+    amber: ['Amber','#9b6508'],
+    rose: ['Rose','#aa346d'],
+    slate: ['Slate','#4b607a']
+  });
+  const hexOK = v => typeof v==='string' && /^#[a-f0-9]{6}$/i.test(v);
+  const rgb = h => [1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+  const hex = values => '#'+values.map(v=>Math.max(0,Math.min(255,Math.round(v))).toString(16).padStart(2,'0')).join('');
+  const blend = (from,to,weight) => hex(rgb(from).map((x,i)=>x*(1-weight)+rgb(to)[i]*weight));
+  const luminance = h => {
+    const a=rgb(h).map(v=>{const x=v/255;return x<=.04045?x/12.92:((x+.055)/1.055)**2.4;});
+    return .2126*a[0]+.7152*a[1]+.0722*a[2];
+  };
+  const contrast = (a,b) => {const x=luminance(a),y=luminance(b);return (Math.max(x,y)+.05)/(Math.min(x,y)+.05);};
+  function accessibleAccent(value,isDark){
+    const surface=isDark?'#101216':'#ffffff',direction=isDark?'#ffffff':'#000000';
+    let candidate=value;
+    for(let i=0;i<25&&contrast(candidate,surface)<5;i++)candidate=blend(candidate,direction,.11);
+    return candidate;
+  }
+  function chosenPalette(){
+    const p=st.prefs;
+    const id=p.palette==='custom'?'custom':Object.hasOwn(PALETTES,p.palette)?p.palette:'red';
+    return id==='custom' ? (hexOK(p.customAccent)?p.customAccent:'#b92e3d') : PALETTES[id][1];
+  }
+  function updatePaletteControls(){
+    const chosen=Object.hasOwn(PALETTES,st.prefs.palette)?st.prefs.palette:st.prefs.palette==='custom'?'custom':'red';
+    $$('.palette-choice').forEach(button=>{
+      const active=button.dataset.palette===chosen;
+      button.classList.toggle('is-selected',active);button.setAttribute('aria-pressed',String(active));
+    });
+    const input=$('#customAccentInput');
+    if(input && document.activeElement!==input)input.value=hexOK(st.prefs.customAccent)?st.prefs.customAccent:'#b92e3d';
+    const label=$('#paletteSelection');
+    if(label)label.textContent=chosen==='custom'?'Custom '+(st.prefs.customAccent||'#b92e3d').toUpperCase():PALETTES[chosen][0];
+  }
+  function setPalette(name){
+    if(name!=='custom'&&!Object.hasOwn(PALETTES,name))return;
+    st.prefs.palette=name;savePrefs();updatePaletteControls();
+  }
+  function setupPaletteControls(){
+    const holder=$('#paletteOptions');if(!holder)return;
+    holder.replaceChildren();
+    for(const [id,[name,colour]] of Object.entries(PALETTES)){
+      const button=make('button','palette-choice');button.type='button';button.dataset.palette=id;
+      button.setAttribute('aria-label','Use '+name+' colour scheme');button.setAttribute('aria-pressed','false');
+      const swatch=make('span','palette-swatch');swatch.style.backgroundColor=colour;swatch.setAttribute('aria-hidden','true');
+      button.append(swatch,make('span','palette-name',name));
+      button.addEventListener('click',()=>setPalette(id));holder.append(button);
+    }
+    const custom=make('button','palette-choice');custom.type='button';custom.dataset.palette='custom';
+    custom.setAttribute('aria-label','Use custom colour scheme');custom.setAttribute('aria-pressed','false');
+    const swatch=make('span','palette-swatch');swatch.id='customPaletteSwatch';swatch.setAttribute('aria-hidden','true');
+    custom.append(swatch,make('span','palette-name','Custom'));custom.addEventListener('click',()=>setPalette('custom'));holder.append(custom);
+    updatePaletteControls();
+  }
   function applyAppearance(){
     const p=st.prefs;
     if(['light','dark'].includes(p.theme))document.documentElement.dataset.theme=p.theme;else delete document.documentElement.dataset.theme;
     document.documentElement.dataset.font=['normal','large','extra'].includes(p.font)?p.font:'normal';
     $('#layoutButton').textContent=p.view==='compact'?'Detailed':'Compact';
     const isDark=p.theme==='dark'||(p.theme==='system'&&matchMedia('(prefers-color-scheme: dark)').matches);
-    document.querySelector('meta[name="theme-color"]').setAttribute('content',isDark?'#101216':'#f6f5f3');
+    const root=document.documentElement;
+    const value=chosenPalette(),accent=accessibleAccent(value,isDark);
+    const baseBg=isDark?'#101216':'#f6f5f3';
+    const bg=blend(baseBg,accent,isDark?.035:.025);
+    const soft=blend(isDark?'#1b1e24':'#ffffff',accent,isDark?.20:.10);
+    root.style.setProperty('--bg',bg);
+    root.style.setProperty('--accent',accent);
+    root.style.setProperty('--accent-soft',soft);
+    root.style.setProperty('--accent-on',isDark?'#101216':'#ffffff');
+    document.querySelector('meta[name="theme-color"]').setAttribute('content',bg);
+    const customSwatch=$('#customPaletteSwatch');if(customSwatch)customSwatch.style.backgroundColor=hexOK(p.customAccent)?p.customAccent:'#b92e3d';
+    updatePaletteControls();
   }
   function splitLines(values){return values.join('\n');}
   function fillFilters(){
@@ -460,14 +534,27 @@
     $('#priceModeCheckbox').checked=Boolean(st.prefs.priceMode);
   }
   document.addEventListener('DOMContentLoaded',()=>{
-    applyAppearance();fillSettings();
+    setupPaletteControls();applyAppearance();fillSettings();
     $$('.tab').forEach(el=>el.addEventListener('click',()=>changeTab(el.dataset.tab)));
     $$('.tab').forEach(el=>{const active=el.dataset.tab===st.tab;el.classList.toggle('active',active);el.setAttribute('aria-selected',String(active));});
     $('#searchInput').addEventListener('input',e=>{st.query=e.target.value;render(true);});
     $('#refreshButton').addEventListener('click',()=>refresh(true));
     $('#layoutButton').addEventListener('click',()=>{st.prefs.view=st.prefs.view==='compact'?'detailed':'compact';$('#viewSelect').value=st.prefs.view;invalidateCards();savePrefs();render(true);});
     $('#filtersButton').addEventListener('click',()=>{fillFilters();$('#filtersDialog').showModal();});
-    $('#settingsButton').addEventListener('click',()=>{$('#settingsMessage').textContent='';fillSettings();backupStatus();checkStorage();$('#settingsDialog').showModal();});
+    const openSettings=fromPalette=>{
+      $('#settingsMessage').textContent='';fillSettings();backupStatus();checkStorage();$('#settingsDialog').showModal();
+      if(fromPalette){$('#appearanceSection').scrollIntoView({block:'nearest'});$('#customAccentInput').focus({preventScroll:true});}
+    };
+    $('#settingsButton').addEventListener('click',()=>openSettings(false));
+    $('#appearanceButton').addEventListener('click',()=>openSettings(true));
+    $('#customAccentInput').addEventListener('input',event=>{
+      if(!hexOK(event.target.value))return;
+      st.prefs.palette='custom';st.prefs.customAccent=event.target.value;applyAppearance();
+    });
+    $('#customAccentInput').addEventListener('change',event=>{
+      if(!hexOK(event.target.value))return;
+      st.prefs.palette='custom';st.prefs.customAccent=event.target.value;savePrefs();updatePaletteControls();
+    });
     $$('[data-close]').forEach(el=>el.addEventListener('click',()=>document.getElementById(el.dataset.close).close()));
     for(const [id,key] of [['themeSelect','theme'],['fontSelect','font'],['viewSelect','view'],['thresholdSelect','threshold']]){
       $('#'+id).addEventListener('change',e=>{st.prefs[key]=e.target.value;if(key==='view')invalidateCards();savePrefs();render(key==='view');});

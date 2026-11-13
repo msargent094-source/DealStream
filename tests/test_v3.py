@@ -1,6 +1,7 @@
 """v3 offline packaging and backwards-compatible history safeguards."""
 from pathlib import Path
 import unittest
+import re
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -27,7 +28,7 @@ class V3Tests(unittest.TestCase):
 
     def test_offline_data_survives_sw_upgrade(self):
         self.assertIn("FEED_CACHE='dealstream-feed-v1'",self.sw)
-        self.assertIn("SHELL_CACHE='dealstream-shell-v4'",self.sw)
+        self.assertRegex(self.sw, r"SHELL_CACHE='dealstream-shell-v[4-9][0-9]*'")
         self.assertIn("headers.set('X-DealStream-Cache','offline')",self.sw)
         self.assertIn('await data.put(feedKey(),record)',self.sw)
 

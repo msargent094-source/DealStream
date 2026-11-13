@@ -1,5 +1,5 @@
 /* DealStream v3: network-first app updates, separate offline feed cache. */
-const SHELL_CACHE='dealstream-shell-v4';
+const SHELL_CACHE='dealstream-shell-v5';
 const FEED_CACHE='dealstream-feed-v1';
 const ASSETS=['./','./index.html','./app.js','./styles.css','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png'];
 const feedKey=()=>new Request(new URL('./data/deals.json',self.registration.scope));

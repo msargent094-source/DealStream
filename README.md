@@ -1,4 +1,4 @@
-# DealStream v3 — fresh OzBargain deals, zero repeats
+# DealStream — fresh OzBargain deals, zero repeats
 
 An installable, mobile-first Android PWA using the [official OzBargain New Deals RSS feed](https://www.ozbargain.com.au/deals/feed). It isn't affiliated with OzBargain.
 
@@ -12,7 +12,7 @@ Live app: <https://msargent094-source.github.io/DealStream/>
 - **Tailored feed:** follow stores by tapping their names; highlight favourite keywords and stores; apply estimated price filters (free / under $25 / $50 / $100 / custom); optionally show followed stores only; mute stores, keywords or entire categories. Saved deals remain available despite feed filters.
 - **Persistent saved deals:** the device stores a copy of saved titles and links, so saved cards survive the 60-day rolling public archive. Existing v1 saved IDs are upgraded automatically when their source cards are available; an old ID with no metadata displays a fallback link.
 - **Browsing conveniences:** resume anchor, scroll-to-top, seen threshold (earlier/balanced/later), search, infinite paging.
-- **Personalisation:** automatic/light/dark theme, three font sizes, detailed/compact cards, price highlighting.
+- **Personalisation:** eight instant colour presets plus an unrestricted custom colour picker, independent automatic/light/dark theme, three font sizes, detailed/compact cards, price highlighting. Change colours with the palette icon in the header or via Settings. Your selection is saved alongside existing preferences.
 - **Feed health and auto updates:** a freshness indicator warns if the source feed is more than 30 minutes old or an hour stale, and service worker updates display a reload prompt. The source feed check time is separate from when your app last fetched the published snapshot. Refresh never claims to query OzBargain instantly.
 - **Privacy:** all your seen records, saved records and preferences stay in browser storage. Export/import a v1, v2 or v3 JSON backup, check storage, request persistent storage, and get periodic backup nudges. No account or subscription.
 
@@ -56,3 +56,7 @@ Favourite keywords and followed stores can highlight matching posts, with a quic
 Scrolling records exposure time while a deal is actually visible; a fast flick is not treated as reading every card. Rendering reuses existing cards when possible. Auto-refresh that would reorder deals is deferred while you read farther down, and applied on returning to the top. A separate feed cache keeps previously fetched deals available offline even across service-worker upgrades. New service-worker versions offer a reload prompt.
 
 Seen and saved storage keys remain unchanged, and backups include all previous information plus v3 filters. If your phone/browser clears *all* site data, neither the service worker nor the app can recover history without an exported JSON backup. Persistent storage reduces ordinary eviction risks but does not replace backups.
+
+## Colour schemes
+
+Tap the colour-palette icon beside Refresh to open Appearance. Select any of eight presets, or pick a custom colour; the colours update instantly without reloading, and the choice persists on this device. Light/dark/Follow phone is independent of the palette. Accessible contrast is adjusted automatically for controls and text. All existing history, saved deals, RSS polling and filters remain unchanged.
