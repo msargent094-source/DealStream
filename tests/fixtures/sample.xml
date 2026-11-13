@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel>
+<title>Sample OzBargain new deals</title>
+<item><title>Wireless Earbuds $29 @ Demo Store</title><link>https://www.ozbargain.com.au/node/123456</link><guid>https://www.ozbargain.com.au/node/123456</guid><pubDate>Fri, 13 Nov 2026 01:30:00 GMT</pubDate><description><![CDATA[<p>Save on earbuds today.</p>]]></description><category>Electrical &amp; Electronics</category></item>
+<item><title>Free Sample @ Other Store</title><link>https://www.ozbargain.com.au/node/123457</link><guid>https://www.ozbargain.com.au/node/123457</guid><pubDate>Fri, 13 Nov 2026 01:40:00 GMT</pubDate><description><![CDATA[<div>A free sample</div><script>alert(1)</script>]]></description><category>Freebies</category></item>
+</channel></rss>
