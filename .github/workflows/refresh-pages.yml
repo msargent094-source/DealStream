@@ -1,8 +1,8 @@
 name: Update deals and publish PWA
 on:
   schedule:
-    # GitHub schedules may be delayed.
-    - cron: '7,22,37,52 * * * *'
+    # Best-effort ten-minute checks, offset from the start of each hour.
+    - cron: '7,17,27,37,47,57 * * * *'
   push:
     branches: [main]
   workflow_dispatch:

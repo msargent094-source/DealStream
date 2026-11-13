@@ -10,6 +10,7 @@
   const RESUME = 'dealstream_resume_v2';
   const SESSION = 'dealstream_session_v2';
   const CHUNK = 40;
+  const REFRESH_INTERVAL_MS = 10 * 60 * 1000;
   const DEFAULT = {theme:'system',font:'normal',view:'compact',priceMode:true,threshold:'normal',onlyFollowed:false,followedStores:[],mutedStores:[],mutedKeywords:[],hiddenCategories:[]};
   const $ = selector => document.querySelector(selector);
   const $$ = selector => Array.from(document.querySelectorAll(selector));
@@ -30,7 +31,7 @@
   try { sessionStorage.setItem(SESSION, JSON.stringify({started:now,baseline:lastVisit})); } catch { /* ignore */ }
   const st = {data:[], seen:map(readObj(SEEN)), saved:map(readObj(SAVED)), snapshots:map(readObj(SNAPSHOTS)), prefs:loadPrefs(),
     tab:read(TAB)||'unseen', query:'',shown:CHUNK,filtered:[],loaded:false,updated:null,checkedAt:null,loading:false,
-    lastY:0,scrolling:false,visible:new Set(),lastVisit, resume:readObj(RESUME),toastUndo:null,toastTimer:null};
+    lastY:0,scrolling:false,visible:new Set(),lastVisit, resume:readObj(RESUME),toastUndo:null,toastTimer:null,pendingFeed:null};
   if (!['unseen','all','saved','new'].includes(st.tab)) st.tab='unseen';
   function savedState(){
     const ok=write(SEEN,JSON.stringify(st.seen)) && write(SAVED,JSON.stringify(st.saved)) && write(SNAPSHOTS,JSON.stringify(st.snapshots));
@@ -233,6 +234,11 @@
     st.prefs.onlyFollowed=false;st.prefs.followedStores=[];st.prefs.mutedStores=[];st.prefs.mutedKeywords=[];st.prefs.hiddenCategories=[];
     savePrefs();render(true);
   }
+  function applyFeed(items,updated){
+    st.data=items;st.updated=updated;st.loaded=true;st.pendingFeed=null;
+    syncSnapshots();banner(updated?'':'The feed has not been initialized. Run the GitHub update workflow.');
+    render(true);
+  }
   function refresh(manual=false){
     if(st.loading)return;st.loading=true;const btn=$('#refreshButton');btn.disabled=true;btn.classList.add('is-busy');
     const before=new Set(st.data.map(x=>x.id)),hadFeed=st.loaded;
@@ -240,17 +246,27 @@
       if(!r.ok)throw new Error('HTTP '+r.status);
       const data=await r.json();if(!data||!Array.isArray(data.items))throw new Error('Invalid feed');
       const uniqMap=new Map();for(const raw of data.items){const d=clean(raw);if(d)uniqMap.set(d.id,d);}
-      st.data=[...uniqMap.values()].sort((a,b)=>b.ms-a.ms);
-      st.updated=typeof data.updatedAt==='string'&&!Number.isNaN(Date.parse(data.updatedAt))?data.updatedAt:null;
-      st.loaded=true;st.checkedAt=Date.now();syncSnapshots();banner(st.updated?'':'The feed has not been initialized. Run the GitHub update workflow.');
-      if(manual)window.scrollTo(0,0);
-      render(true);
-      if(manual){const additions=hadFeed?st.data.filter(x=>!before.has(x.id)).length:0;
-        toast(additions?`${additions} newly published deal${additions===1?'':'s'} loaded`:'You have the latest published feed');}
+      const incoming=[...uniqMap.values()].sort((a,b)=>b.ms-a.ms);
+      const updated=typeof data.updatedAt==='string'&&!Number.isNaN(Date.parse(data.updatedAt))?data.updatedAt:null;
+      const additions=hadFeed?incoming.filter(x=>!before.has(x.id)).length:0;
+      const changed=incoming.length!==st.data.length || incoming.some((d,i)=>d.id!==st.data[i]?.id || d.title!==st.data[i]?.title);
+      st.checkedAt=Date.now();
+      // Do not rebuild the cards underneath someone reading partway through the feed.
+      if(!manual && hadFeed && window.scrollY>160 && (changed || st.pendingFeed)){
+        st.pendingFeed={items:incoming,updated};
+        stats();
+        banner(additions?`${additions} new deal${additions===1?'':'s'} ready. Scroll to the top to view them, or tap Refresh.`:'Updated deals are ready. Scroll to the top or tap Refresh.');
+      }else if(!manual && hadFeed && !changed && !st.pendingFeed){
+        st.updated=updated;stats();
+      }else{
+        if(manual)window.scrollTo(0,0);
+        applyFeed(incoming,updated);
+        if(manual)toast(additions?`${additions} newly published deal${additions===1?'':'s'} loaded`:'You have the latest published feed');
+      }
     }).catch(()=>{
       st.loaded=true;st.checkedAt=Date.now();
       banner('Could not check the published feed. '+(st.data.length?'Your current deals are still available.':'Check your internet connection and GitHub Pages deployment.'));
-      render(true);
+      stats();
     }).finally(()=>{st.loading=false;btn.disabled=false;btn.classList.remove('is-busy');});
   }
   const threshold = () => ({early:.7,normal:.45,careful:.2}[st.prefs.threshold]||.45);
@@ -258,6 +274,7 @@
     if(st.scrolling)return;st.scrolling=true;
     requestAnimationFrame(()=>{
       st.scrolling=false;const y=window.scrollY,h=window.innerHeight,down=y>st.lastY;
+      if(y<100 && st.pendingFeed){const pending=st.pendingFeed;applyFeed(pending.items,pending.updated);}
       if(down && y>40){let changed=false;
         for(const c of $$('.deal-card')){
           const id=c.dataset.dealId,r=c.getBoundingClientRect();
@@ -346,7 +363,8 @@
     const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)&&st.shown<st.filtered.length){st.shown+=CHUNK;render(false);}},{rootMargin:'500px'});
     observer.observe($('#loadMoreSentinel'));
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{if(st.prefs.theme==='system')applyAppearance();});
-    document.addEventListener('visibilitychange',()=>{if(!document.hidden&&st.checkedAt&&Date.now()-st.checkedAt>5*60*1000)refresh(false);});
+    document.addEventListener('visibilitychange',()=>{if(!document.hidden&&!st.loading&&(!st.checkedAt||Date.now()-st.checkedAt>=REFRESH_INTERVAL_MS))refresh(false);});
+    window.setInterval(()=>{if(!document.hidden&&!st.loading&&(!st.checkedAt||Date.now()-st.checkedAt>=REFRESH_INTERVAL_MS))refresh(false);},REFRESH_INTERVAL_MS);
     if('scrollRestoration' in history)history.scrollRestoration='manual';
     window.scrollTo(0,0);render(true);refresh(false);
   });

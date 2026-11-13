@@ -22,7 +22,7 @@ Open <https://msargent094-source.github.io/DealStream/> in Chrome, tap **⋮ →
 
 ## Hosting & feeds
 
-GitHub Pages hosts the static PWA. `.github/workflows/refresh-pages.yml` checks the RSS feed about every 15 minutes. This GitHub Actions schedule is best effort and may be delayed. It retains a rolling archive for 60 days, maximum 8,000 public posts. The PWA itself never scrapes or logs into OzBargain. Pressing Refresh loads the latest **published GitHub Pages snapshot**, not the RSS feed directly.
+GitHub Pages hosts the static PWA. `.github/workflows/refresh-pages.yml` checks the RSS feed about every 10 minutes. This GitHub Actions schedule is best effort and may be delayed. It retains a rolling archive for 60 days, maximum 8,000 public posts. The PWA itself never scrapes or logs into OzBargain. While DealStream is open and visible, it automatically checks the latest **published GitHub Pages snapshot** every 10 minutes. Returning to an inactive app also checks if 10 minutes have passed. New deals appear automatically at the top; if you are reading farther down, updates wait until you scroll back to the top so your position is not lost. Pressing Refresh also loads the latest published snapshot, not the RSS feed directly.
 
 ## Tests
 
