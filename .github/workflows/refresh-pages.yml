@@ -1,0 +1,63 @@
+name: Update deals and publish PWA
+on:
+  schedule:
+    # GitHub schedules may be delayed.
+    - cron: '7,22,37,52 * * * *'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: dealstream-pages
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test feed parser
+        run: python -m unittest discover -s tests -v
+      - name: Generate Android install icon
+        run: python scripts/generate_icons.py
+      - name: Fetch OzBargain official new-deals RSS
+        run: python scripts/update_feed.py
+      - name: Save rolling feed archive and generated icon
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/deals.json icons/icon-512.png
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh OzBargain deals and icons"
+            git push origin HEAD:main
+          fi
+      - name: Assemble static Pages files
+        run: |
+          mkdir -p dist
+          cp index.html styles.css app.js sw.js manifest.webmanifest dist/
+          cp -r icons data dist/
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Deploy site
+        uses: actions/deploy-pages@v4
+        id: deployment
