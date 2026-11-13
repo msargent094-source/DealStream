@@ -1,10 +1,100 @@
 {
   "source": "https://www.ozbargain.com.au/deals/feed",
-  "updatedAt": "2026-11-13T11:16:23.860889Z",
+  "updatedAt": "2026-11-13T14:29:08.321836Z",
   "items": [
     {
+      "id": "983046",
+      "title": "[PC] Ashampoo Photo Optimizer 11 - Free Lifetime Licence (Normally $40) - Newsletter Sign-up Required @ Ashampoo",
+      "url": "https://www.ozbargain.com.au/node/983046",
+      "published": "2026-11-13T14:28:20Z",
+      "merchant": "Ashampoo",
+      "category": "Computing",
+      "description": "Get Ashampoo Photo Optimizer 11 completely free and keep it forever! Normally priced at $40, this offer gives you a free lifetime license for 1 PC. Ashampoo Photo Optimizer 11 makes improving your …"
+    },
+    {
+      "id": "983045",
+      "title": "Motorola Moto Tag 4-Pack Bluetooth Tracker $88 (Was $179) @ Harvey Norman",
+      "url": "https://www.ozbargain.com.au/node/983045",
+      "published": "2026-11-13T14:11:16Z",
+      "merchant": "Harvey Norman",
+      "category": "Electrical & Electronics",
+      "description": "Harvey Norman currently has the Motorola moto tag 4-Pack Bluetooth Tracker on sale for $88 (50% off the $179 RRP, working out to $22 per tag). While not the all-time low ($69 back in September), …"
+    },
+    {
+      "id": "983044",
+      "title": "Heavy Duty Tarps 2 Pack 3.6x 4.8m $29.98 Delivered @ Costco (Membership Required)",
+      "url": "https://www.ozbargain.com.au/node/983044",
+      "published": "2026-11-13T13:49:31Z",
+      "merchant": "Costco (Membership Required)",
+      "category": "Home & Garden",
+      "description": "Heavy Duty Tarps 2 Pack 3.6 x 4.8M $49.98 - $20 = $29.98 delivered Price valid from 13/11/2026 to 15/11/2026. While stock lasts Crafted from thick, tear resistant material with …"
+    },
+    {
+      "id": "983041",
+      "title": "Westpac Altitude Qantas/Velocity Black: 90k V/QFF + 50 SC w/ $9k spend in 90 Days, $295 Fee ($200 existing), $155/Yr Program Fee",
+      "url": "https://www.ozbargain.com.au/node/983041",
+      "published": "2026-11-13T13:28:49Z",
+      "merchant": "",
+      "category": "Financial",
+      "description": "No more 100% first-year annual fee waiver for existing customers, and the program fee as well as the spend requirement has increased, but at least the sign-up offer points have remained the same …"
+    },
+    {
+      "id": "983039",
+      "title": "PureVPN: 130% Cashback on 1-Year, 2-Year, or Monthly Plans for New PureVPN Customers @ TopCashback US",
+      "url": "https://www.ozbargain.com.au/node/983039",
+      "published": "2026-11-13T12:28:14Z",
+      "merchant": "TopCashback US",
+      "category": "Internet",
+      "description": "Exclusions: - Cash Back is eligible only on 1-year, 2-year, and monthly plans Exclusions: Cash Back is eligible only on 1-year, 2-year, and monthly plans (Standard, Plus, Max). Purchases of 5-year …"
+    },
+    {
+      "id": "983038",
+      "title": "Amazon Fire TV Stick 4K 2-Pack [2024 Version] $78 + Delivery ($0 C&C/In-Store) @ JB Hi-Fi",
+      "url": "https://www.ozbargain.com.au/node/983038",
+      "published": "2026-11-13T12:22:39Z",
+      "merchant": "JB Hi-Fi",
+      "category": "Electrical & Electronics",
+      "description": "This deal is back, and it's $1 cheaper than last year! Specs Media streaming OS: Amazon Media streaming: Yes Screen Resolution: 4K Ultra HD Wi-Fi: Wi-Fi 6 (802.11 ax) Smart features: …"
+    },
+    {
+      "id": "983037",
+      "title": "PUMA Deviate Pure Nitro (Black Colour only) $119",
+      "url": "https://www.ozbargain.com.au/node/983037",
+      "published": "2026-11-13T12:17:09Z",
+      "merchant": "",
+      "category": "Fashion & Apparel",
+      "description": "PUMA Deviate Pure Nitro (Black Colour only) $119 part of Black Friday Sale, only some sizes are available in limited stock."
+    },
+    {
+      "id": "983036",
+      "title": "GameSir Nova Lite Wireless Gamepad Purple US$15.88 (~A$23.37) Delivered @ GameSir Global Store AliExpress",
+      "url": "https://www.ozbargain.com.au/node/983036",
+      "published": "2026-11-13T12:01:58Z",
+      "merchant": "GameSir Global Store AliExpress",
+      "category": "Gaming",
+      "description": "It's been quite a while since we've seen this wireless controller on sale with Space Purple the cheapest colour on the listing. Elite members can get a further US$0.85 off. Stack with with …"
+    },
+    {
+      "id": "983035",
+      "title": "Wooden LED Advent Christmas Calendar $39.99 Delivered @ Costco (Membership Required)",
+      "url": "https://www.ozbargain.com.au/node/983035",
+      "published": "2026-11-13T11:53:28Z",
+      "merchant": "Costco (Membership Required)",
+      "category": "Home & Garden",
+      "description": "Wooden LED Advent Christmas Calendar This wooden Christmas advent calendar depicts a winter Christmas scene in the Alps. It features exquisite details and built-in lights. Starting on December …"
+    },
+    {
+      "id": "983032",
+      "title": "Viktor & Rolf Men's Spicebomb Night Vision Cologne Parfum 2-Piece Gift Set $84.46 Delivered @ Amazon AU (Excl. TAS, NT)",
+      "url": "https://www.ozbargain.com.au/node/983032",
+      "published": "2026-11-13T11:24:16Z",
+      "merchant": "Amazon AU (Excl. TAS, NT)",
+      "category": "Health & Beauty",
+      "description": "Very good price for the gift set, available elsewhere for $245AUD. The bottle alone is mostly on sale for $149.00. Features: Viktor&Rolf invites you to play a new game of seduction in …"
+    },
+    {
       "id": "983030",
-      "title": "Jetstar Weekend Frenzy: Brisbane-Newcastle from $57, Hervey Bay $75, Hobart $79 & more one-way & more @ BTF",
+      "title": "Jetstar Weekend Frenzy: Brisbane-Newcastle from $57, Hervey Bay $75, Hobart $79 & More One-Way & More @ BTF",
       "url": "https://www.ozbargain.com.au/node/983030",
       "published": "2026-11-13T11:11:22Z",
       "merchant": "BTF",
