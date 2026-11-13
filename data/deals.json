@@ -1,19 +1,46 @@
 {
   "source": "https://www.ozbargain.com.au/deals/feed",
-  "updatedAt": "2026-11-13T03:35:36.489291Z",
+  "updatedAt": "2026-11-13T04:00:59.556171Z",
   "items": [
     {
+      "id": "982942",
+      "title": "[NSW] Free Matchas from 12-3pm Saturday (14/11) @ Balibola (Bondi Junction)",
+      "url": "https://www.ozbargain.com.au/node/982942",
+      "published": "2026-11-13T03:42:03Z",
+      "merchant": "Balibola (Bondi Junction)",
+      "category": "Dining & Takeaway",
+      "description": "Balibola is officially opening this Saturday, 14 November, at Bondi Junction. 🌴 🍵 FREE MATCHA from 12–3pm! Eastgate Shopping Centre, Bondi Junction"
+    },
+    {
+      "id": "982941",
+      "title": "81% off Secret Premium Barossa Shiraz 2021 6-Pack $96 Delivery ($0 with $150 Order) @ Dozen Deals",
+      "url": "https://www.ozbargain.com.au/node/982941",
+      "published": "2026-11-13T03:37:20Z",
+      "merchant": "Dozen Deals",
+      "category": "Alcohol",
+      "description": "Here's a serious bargain for Barossa Shiraz lovers. We've secured a limited parcel of this premium 2021 Barossa Shiraz under a secret label, reducing the price from $95 to just $18 a …"
+    },
+    {
+      "id": "982939",
+      "title": "$25 off Meals (Orders Over $99), Free Protein Cookie + 2 Free Meals + $14.95 Shipping ($0 with Subscription) @ Muscle Diets",
+      "url": "https://www.ozbargain.com.au/node/982939",
+      "published": "2026-11-13T03:36:02Z",
+      "merchant": "Muscle Diets",
+      "category": "Dining & Takeaway",
+      "description": "Our Black Friday sale has started! Use BF25 for $25 off + free cookie + TWO free meals for orders over $99. Extra $5 off compared to the last deal. The two free meals or cookie won't …"
+    },
+    {
       "id": "982937",
-      "title": "[Black Friday] 30% off Sitewide - T-Shirts & Tanks from $13.99, Boxy Tees from $20.99 @ American Apparel AU",
+      "title": "30% off Sitewide - T-Shirts & Tanks from $13.99, Boxy Tees from $20.99 + Delivery ($0 with $99 Order) @ American Apparel",
       "url": "https://www.ozbargain.com.au/node/982937",
       "published": "2026-11-13T03:30:05Z",
-      "merchant": "American Apparel AU",
+      "merchant": "American Apparel",
       "category": "Fashion & Apparel",
       "description": "American Apparel Australia is offering 30% off sitewide as part of its Black Friday Sale 2026, running from 12 November to 30 November. Discounts apply across T-shirts, tank tops, heavyweight tees, …"
     },
     {
       "id": "982936",
-      "title": "Double Data at ALDI Mobile for Mobile and Family Plans for 6 recharges",
+      "title": "Double Data at ALDI Mobile for Mobile (from $34p/m) and Family Plans (from $60p/m) for 6 recharges",
       "url": "https://www.ozbargain.com.au/node/982936",
       "published": "2026-11-13T03:29:47Z",
       "merchant": "",
@@ -40,7 +67,7 @@
     },
     {
       "id": "982933",
-      "title": "Extra 25% off Storewide (Exclusions Apply) + Delivery ($0 VIC C&C) @ Supply & Demand",
+      "title": "Extra 25% off Storewide Online (Exclusions Apply) + Delivery ($0 VIC C&C) @ Supply & Demand",
       "url": "https://www.ozbargain.com.au/node/982933",
       "published": "2026-11-13T03:08:40Z",
       "merchant": "Supply & Demand",
@@ -58,10 +85,10 @@
     },
     {
       "id": "982931",
-      "title": "DIY Resistor Detector Soldering Project – Learn 4 & 5 Band Color Codes! US$18.69 (~A$27.44) + US$3 (~A$4.4) Delivery @ICStation",
+      "title": "DIY Resistor Detector Soldering Project – Learn 4 & 5 Band Color Codes US$18.69 (~A$27.44) + US$3 (~A$4.40) Delivery @ ICStation",
       "url": "https://www.ozbargain.com.au/node/982931",
       "published": "2026-11-13T02:58:02Z",
-      "merchant": "",
+      "merchant": "ICStation",
       "category": "Electrical & Electronics",
       "description": "Build your own resistor tester! This soldering project kit becomes a practical tool for identifying resistor values while teaching color code reading – perfect for electronics learners. Two …"
     },
@@ -108,7 +135,7 @@
       "published": "2026-11-13T01:54:26Z",
       "merchant": "Optus",
       "category": "Mobile",
-      "description": "$80 Cashback at Shopback - Ends 13/11. Usual terms apply: Needs to be activated with 18 days of purchase Need to be the same plan for 90 days More Upsized Cashback available on Shopback"
+      "description": "$80 Cashback at Shopback - Ends 13/11. Usual terms apply: Needs to be activated with 28 days of purchase Need to be the same plan for 90 days More Upsized Cashback available on Shopback"
     },
     {
       "id": "982920",
@@ -229,7 +256,7 @@
     },
     {
       "id": "982896",
-      "title": "Live-Sonar Masterclass $336.75 (RRP $449) + Exclusive Post-Purchase Offer: Sounder Secrets $99 (RRP $179) @ My Fishing Coach",
+      "title": "Buy Live-Sonar Masterclass Course for $336.75 (RRP $449) & Then Buy Sounder Secrets for $99 (RRP $179) @ My Fishing Coach",
       "url": "https://www.ozbargain.com.au/node/982896",
       "published": "2026-11-13T00:07:42Z",
       "merchant": "My Fishing Coach",
