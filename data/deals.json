@@ -1,13 +1,40 @@
 {
   "source": "https://www.ozbargain.com.au/deals/feed",
-  "updatedAt": "2026-11-15T19:29:32.367787Z",
+  "updatedAt": "2026-11-15T20:24:08.075395Z",
   "items": [
     {
+      "id": "983281",
+      "title": "[PC, Steam] Kingdom Come: Deliverance II $35.98 (Was $89.95) @ Humble Bundle",
+      "url": "https://www.ozbargain.com.au/node/983281",
+      "published": "2026-11-15T20:18:58Z",
+      "merchant": "Humble Bundle",
+      "category": "Gaming",
+      "description": "A thrilling story-driven action RPG, with a rich open world, set in 15th century Medieval Europe. Experience the ultimate medieval adventure - through the eyes of young Henry - as you embark on a …"
+    },
+    {
+      "id": "983280",
+      "title": "nbn FFTP/HFC: 500/50 $69/M, 1000/100 $99/M for 6 Months (New & Existing Upgrading Customers) @ Aussie Broadband",
+      "url": "https://www.ozbargain.com.au/node/983280",
+      "published": "2026-11-15T20:10:56Z",
+      "merchant": "Aussie Broadband",
+      "category": "Internet",
+      "description": "Aussie Broadband Black Friday plans are out. $30 off per month for 6 months. Eligible plans: 25/10, 100/20, 500/50, 1000/100. FW 250/20. Fast Fibre 500/50 $69/month for the first 6 months …"
+    },
+    {
+      "id": "983279",
+      "title": "PlayStation 5 DualSense Controllers $79 Delivered @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/983279",
+      "published": "2026-11-15T19:50:38Z",
+      "merchant": "Amazon AU",
+      "category": "Gaming",
+      "description": "Matching the JB Hi-Fi deal thanks to zagadka. Comes with free delivery on Amazon. So far available in the following at $79: Gray Camouflage Midnight Black Nova Pink Starlight …"
+    },
+    {
       "id": "983277",
-      "title": "Select Van Heusen Business Shirts for $25",
+      "title": "Dress Shirt $25 Each + $7.95 Delivery ($0 with $100 Spend/ In-Store) @ Van Heusen",
       "url": "https://www.ozbargain.com.au/node/983277",
       "published": "2026-11-15T15:55:40Z",
-      "merchant": "",
+      "merchant": "Van Heusen",
       "category": "Fashion & Apparel",
       "description": "Select Van Heusen business shirts for $25, decent selection of colours and good range of sizes available."
     },
@@ -76,10 +103,10 @@
     },
     {
       "id": "983264",
-      "title": "Up to 20% off @Green Gadgets",
+      "title": "Up to 20% off @ Green Gadgets",
       "url": "https://www.ozbargain.com.au/node/983264",
       "published": "2026-11-15T11:39:08Z",
-      "merchant": "",
+      "merchant": "Green Gadgets",
       "category": "Mobile",
       "description": "Green Gadgets have started Black Friday sales with up to 20% off refurbished phones, tablets, watches and laptops. Certified quality 72-point tested, professionally cleaned and graded by …"
     },
@@ -94,10 +121,10 @@
     },
     {
       "id": "983260",
-      "title": "Adobe Creative Cloud 60% off - Now $44.99/Month ($539.88/Year)",
+      "title": "Adobe Creative Cloud 60% off $44.99/Month ($539.88/Year) @ Adobe",
       "url": "https://www.ozbargain.com.au/node/983260",
       "published": "2026-11-15T10:48:08Z",
-      "merchant": "",
+      "merchant": "Adobe",
       "category": "Computing",
       "description": "Save 60% for the first 12 months. Offer available to eligible first-time subscribers of Creative Cloud Pro for individuals. More info - https://www.adobe.com/au/creativecloud.html Terms and …"
     },
