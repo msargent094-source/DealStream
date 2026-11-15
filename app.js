@@ -13,7 +13,7 @@
   const DWELL_MS = 550;
   const HISTORY_REMINDER_MS = 30 * 24 * 60 * 60 * 1000;
   const CHUNK = 40;
-  const REFRESH_INTERVAL_MS = 10 * 60 * 1000;
+  const REFRESH_INTERVAL_MS = 2 * 60 * 1000;
   const DEFAULT = {palette:'red',customAccent:'#b92e3d',theme:'system',font:'normal',view:'compact',priceMode:true,threshold:'normal',onlyFollowed:false,followedStores:[],mutedStores:[],mutedKeywords:[],hiddenCategories:[],favoriteKeywords:[],quietAlerts:true,priceFilter:'any',customMax:''};
   const $ = selector => document.querySelector(selector);
   const $$ = selector => Array.from(document.querySelectorAll(selector));
