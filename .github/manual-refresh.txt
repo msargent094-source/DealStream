@@ -1,3 +1,4 @@
-DealStream hourly backup feed refresh trigger.
-UTC timestamp: 2026-11-15T12:23:29Z
-Reason: Hourly backup feed refresh
+DealStream manual feed refresh trigger.
+A change to this file triggers the existing GitHub Actions push workflow to fetch and publish current OzBargain deals.
+Requested UTC: 2026-11-15T13:26:28Z
+Reason: Hourly backup feed refresh.
