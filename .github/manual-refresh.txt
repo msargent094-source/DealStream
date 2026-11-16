@@ -1,4 +1,4 @@
 DealStream manual feed refresh trigger.
 A change to this file triggers the existing GitHub Actions push workflow to fetch and publish current OzBargain deals.
-Requested UTC: 2026-11-16T00:32:19Z
+Requested UTC: 2026-11-16T02:28:37Z
 Reason: Hourly backup feed refresh.
