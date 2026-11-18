@@ -1,13 +1,85 @@
 {
   "source": "https://www.ozbargain.com.au/deals/feed",
-  "updatedAt": "2026-11-18T23:27:01.996734Z",
+  "updatedAt": "2026-11-18T23:56:50.682678Z",
   "items": [
     {
+      "id": "984112",
+      "title": "Alienware 39\" OLED Gaming Monitor $1,439.20 + Delivery (with 20% cashback @TCB) @ The Good Guys",
+      "url": "https://www.ozbargain.com.au/node/984112",
+      "published": "2026-11-18T23:49:09Z",
+      "merchant": "The Good Guys",
+      "category": "Computing",
+      "description": "Thanks to TCB, this comes close to the ATL of $1,449.99 from Prime day deals if you missed out on it. Get in quick while the 20% TCB offer is still live."
+    },
+    {
+      "id": "984111",
+      "title": "[VIC] 100 Free Fairy Floss, Biscuits or Marshmallows Daily from Nov. 19-22 + 50 Free Gift Bag w/ $60 Purchase @ Muji (Highpoint)",
+      "url": "https://www.ozbargain.com.au/node/984111",
+      "published": "2026-11-18T23:48:17Z",
+      "merchant": "Muji (Highpoint)",
+      "category": "Dining & Takeaway",
+      "description": "Celebrate MUJI Highpoint's Reopening on the 19th November with us. The first 200 customers on the reopening morning will receive a free jelly drink. The first 100 customers will …"
+    },
+    {
+      "id": "984109",
+      "title": "Hoyts $50/ $100/ $150 Gift Cards - 20% Cashback (22% with Eligible Westpac Group Cards) @ ShopBack",
+      "url": "https://www.ozbargain.com.au/node/984109",
+      "published": "2026-11-18T23:46:21Z",
+      "merchant": "ShopBack",
+      "category": "Entertainment",
+      "description": "Things to note: Gift cards are valid for 36 months from purchase. Only one gift card can be redeemed per online transaction. Multiple gift cards can be used in cinemas. Can be used for movie …"
+    },
+    {
+      "id": "984106",
+      "title": "Meta Quest 3S 128GB VR Headset (GOLF+ included) $478 (RRP $569) Delivered @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/984106",
+      "published": "2026-11-18T23:39:25Z",
+      "merchant": "Amazon AU",
+      "category": "Gaming",
+      "description": "Don't forget the referral stuff. Slightly cheaper than the last deal, but still ATL this year. The 3 is better but if it's just for kids to play Gorilla Tag on, this will do. Features: …"
+    },
+    {
+      "id": "984105",
+      "title": "Cadbury Favourites Chocolate Gift Box 470g 2pack for $15 + Delivery ($0 C&C) @BWS",
+      "url": "https://www.ozbargain.com.au/node/984105",
+      "published": "2026-11-18T23:38:07Z",
+      "merchant": "",
+      "category": "Groceries",
+      "description": "Gemini helped in description: Spotted a solid multi-buy deal on the 470g boxes of Cadbury Favourites at BWS — 2 boxes for $15 ($7.50 each, working out to roughly $1.60 per 100g). For comparison, …"
+    },
+    {
+      "id": "984104",
+      "title": "[NSW, VIC, QLD, ACT] Free Regular Scoop of Anita Gelato (in-Store Only) @ Commbank Yello",
+      "url": "https://www.ozbargain.com.au/node/984104",
+      "published": "2026-11-18T23:36:33Z",
+      "merchant": "Commbank Yello",
+      "category": "Dining & Takeaway",
+      "description": "Found this in the perks section of the commbank yello app. Treat yourself to a taste of CommBank Yello with a FREE regular scoop of Anita Gelato, on us! With Anita Gelato locations across QLD, NSW, …"
+    },
+    {
+      "id": "984103",
+      "title": "[Back in Stock] HP OmniBook 5 16\" OLED (Snapdragon X Plus, 32GB RAM, 512GB SSD) $999, 14\" $1,029 Delivered @ Hub by Triforce",
+      "url": "https://www.ozbargain.com.au/node/984103",
+      "published": "2026-11-18T23:36:29Z",
+      "merchant": "Hub by Triforce",
+      "category": "Computing",
+      "description": "Back in stock, limited qty. No code needed, price is on the site. limited stock! HP OmniBook 5 16\" OLED: $999 Snapdragon X Plus 32GB RAM, 512GB SSD 16\" OLED …"
+    },
+    {
+      "id": "984102",
+      "title": "Britbox 3-Month Subscription $10 (Usually $13.99 Per Month, New and Returning Customers) @ Britbox",
+      "url": "https://www.ozbargain.com.au/node/984102",
+      "published": "2026-11-18T23:29:19Z",
+      "merchant": "Britbox",
+      "category": "Entertainment",
+      "description": "Offer valid from 12:00AM AEDT 19th November 2026 until 11.59pm AEDT on 23rd November 2026. Available to new and returning BritBox subscribers. Offer can only be redeemed through BritBox website, …"
+    },
+    {
       "id": "984101",
-      "title": "[PC, Steam] Like a Dragon: Infinite Wealth $22.99 (-80%) / Deluxe $27.59 / Ultimate $35.99",
+      "title": "[PC, Steam] Like a Dragon: Infinite Wealth $22.99 (80% off), Deluxe Edition $27.59, Ultimate Edition $35.99 @ Steam",
       "url": "https://www.ozbargain.com.au/node/984101",
       "published": "2026-11-18T23:24:26Z",
-      "merchant": "",
+      "merchant": "Steam",
       "category": "Gaming",
       "description": "Steam Midweek Deal on Like a Dragon: Infinite Wealth. Two larger-than-life heroes, Ichiban Kasuga and Kazuma Kiryu are brought together by the hand of fate, or perhaps something more sinister… …"
     },
