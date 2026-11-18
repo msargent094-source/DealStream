@@ -1,15 +1,123 @@
 {
   "source": "https://www.ozbargain.com.au/deals/feed",
-  "updatedAt": "2026-11-18T09:04:04.898970Z",
+  "updatedAt": "2026-11-18T10:24:10.568760Z",
   "items": [
     {
+      "id": "983989",
+      "title": "Mark & Spencer Luxury Gold Tea 80 Teabags $.10 @ Coles",
+      "url": "https://www.ozbargain.com.au/node/983989",
+      "published": "2026-11-18T10:21:00Z",
+      "merchant": "Coles",
+      "category": "Groceries",
+      "description": "MS luxury gold tea bags 80 pack clearance for 10c. Down from 3.40. super good deal. Saw at both Coles Victoria gardens and Richmond traders"
+    },
+    {
+      "id": "983988",
+      "title": "Singleton of Dufftown 15 Years Old 40% Speyside Single Malt Scotch Whisky 700ml $79.98 Delivered @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/983988",
+      "published": "2026-11-18T10:18:36Z",
+      "merchant": "Amazon AU",
+      "category": "Alcohol",
+      "description": "Back in and on sale again at a good price, and its nice drop. Google AI overview states in Australia, it is listed at around $127.99–$130.99 AUD"
+    },
+    {
+      "id": "983986",
+      "title": "Sony FE 85mm F1.4 GM $1169.5 with Coupon Code Sonysave",
+      "url": "https://www.ozbargain.com.au/node/983986",
+      "published": "2026-11-18T10:12:06Z",
+      "merchant": "",
+      "category": "Electrical & Electronics",
+      "description": "Great price for Sony's first-gen 85mm F1.4 GM portrait prime if you're looking to pick one up brand new with full local warranty. Use the code SONYSAVE at checkout to bring it down to …"
+    },
+    {
+      "id": "983985",
+      "title": "Sony Cameras + Lens Cashback up to $1200 - Alpha, 1, 9, 7, 7C, 7R, 7CR, 6700, 6400, Rx1r III, RX100 VII - and More",
+      "url": "https://www.ozbargain.com.au/node/983985",
+      "published": "2026-11-18T10:10:01Z",
+      "merchant": "",
+      "category": "Electrical & Electronics",
+      "description": "Covers over 50 bodies, lenses, and body+lens kits. Example cashback $400 on the a6700, roughly 16% off RRP. Up to $1200 offered on highest-price models (Alpha 1 II). From Sony website… …"
+    },
+    {
+      "id": "983984",
+      "title": "Water Repellent Canvas Sneakers $9.95 @ Muji",
+      "url": "https://www.ozbargain.com.au/node/983984",
+      "published": "2026-11-18T10:06:08Z",
+      "merchant": "Muji",
+      "category": "Fashion & Apparel",
+      "description": "3 colours available, most sizes available. May or may not be better quality than Kmart, but it is under $10 bucks. Ingredients as per Muji. Upper: 100% Cotton Sole: Rubber Sole"
+    },
+    {
+      "id": "983983",
+      "title": "Dewalt 18/54V 9.0Ah XR FlexVolt Battery DCB547-XE $139 & 6.0Ah DCB546-XE $99 @ Bunnings",
+      "url": "https://www.ozbargain.com.au/node/983983",
+      "published": "2026-11-18T09:44:00Z",
+      "merchant": "Bunnings",
+      "category": "Home & Garden",
+      "description": "pretty much half of retail price. maybe VIC only, cant confirm. https://www.bunnings.com.au/dewalt-18-54v-9-0ah-xr-flexvolt-… https://www.bunnings.com.au/dewalt-18v-54v-6-0ah-xr-flexvolt…"
+    },
+    {
+      "id": "983982",
+      "title": "½ Price: Gym Bod Protein Ice Cream Varieties 475mL $5.50 & Gym Bod Ultra High Protein Ice Cream Varieties 475mL $6.25 @ Coles",
+      "url": "https://www.ozbargain.com.au/node/983982",
+      "published": "2026-11-18T09:39:30Z",
+      "merchant": "Coles",
+      "category": "Groceries",
+      "description": "Rare special of the week. This is the first ½ price sale for this product since StockUp started tracking and the last OzB tracked ½ price was back in 2024, posted by the store rep themselves. The …"
+    },
+    {
+      "id": "983981",
+      "title": "[PC, Mac] Columnly – Offline PDF to Excel Converter US$9.74 (~A$15), 25% off (Was US$12.99 Approximately AUD 19) @ Columnly",
+      "url": "https://www.ozbargain.com.au/node/983981",
+      "published": "2026-11-18T09:34:58Z",
+      "merchant": "Columnly",
+      "category": "Computing",
+      "description": "I am an independent software developer based in Melbourne and the creator of Columnly, a desktop app that helps you extract data from PDF invoices, bills and statements into Excel or CSV. I built …"
+    },
+    {
+      "id": "983980",
+      "title": "Garmin Instinct Crossover, Solar Tactical Edition Smartwatch Black $424 (RRP $849) Delivered @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/983980",
+      "published": "2026-11-18T09:29:16Z",
+      "merchant": "Amazon AU",
+      "category": "Electrical & Electronics",
+      "description": "Features: Rugged watch body in tactical-specific colors with dual-layered bezel Combines a classic analog experience with smart functionality Revodrive technology delivers accurate …"
+    },
+    {
+      "id": "983975",
+      "title": "11SIX24 Vapor Power 2 Gen 4 Pickleball Paddle $168.27 Shipped (Was $309) @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/983975",
+      "published": "2026-11-18T09:22:20Z",
+      "merchant": "Amazon AU",
+      "category": "Sports & Outdoors",
+      "description": "11SIX24 Vapor Power 2 Pickleball Paddle down to $168.27 on Amazon AU (RRP $309). Even with local stores running Black Friday promos (e.g. Pickld has it at $262.65), nothing locally is getting near …"
+    },
+    {
+      "id": "983974",
+      "title": "[PC] Just Cause 2 - Complete Edition $2.99 @ GOG",
+      "url": "https://www.ozbargain.com.au/node/983974",
+      "published": "2026-11-18T09:22:17Z",
+      "merchant": "GOG",
+      "category": "Gaming",
+      "description": "As agent Rico Rodriguez, your orders are to find and kill your friend and mentor who has disappeared on the island paradise of Panau. There, you must cause maximum chaos by land, sea and air to shift …"
+    },
+    {
+      "id": "983972",
+      "title": "Dji Osmo Action 4 Essential Combo $249 Delivered @ Amazon Au",
+      "url": "https://www.ozbargain.com.au/node/983972",
+      "published": "2026-11-18T09:20:12Z",
+      "merchant": "Amazon Au",
+      "category": "Electrical & Electronics",
+      "description": "not atl but close to it, good camera for the price"
+    },
+    {
       "id": "983970",
-      "title": "18yo Mizunara Centenary Whisky 700ml $1809.65 (Member's Price, Non-Member $3,568.30) + Free Metro Delivery @ Dan Murphy's",
+      "title": "Yamazaki 18yo Mizunara Centenary Whisky 700ml $1809.65 + Free Metro Delivery @ Dan Murphy's (Free My Dan's Membership Required)",
       "url": "https://www.ozbargain.com.au/node/983970",
       "published": "2026-11-18T08:40:39Z",
-      "merchant": "Dan Murphy's",
+      "merchant": "Dan Murphy's (Free My Dan's Membership Required)",
       "category": "Alcohol",
-      "description": "First time posting, but I've bought a few off these at bigger prices than this so I thought I would share with the community. Last time it was posted, price was $2,720 @ Dan's. To buy …"
+      "description": "GET15 coupon code is member exclusive, ends Sunday. Login to use codes. First time posting, but I've bought a few off these at bigger prices than this so I thought I would share with the …"
     },
     {
       "id": "983969",
@@ -63,7 +171,7 @@
       "published": "2026-11-18T07:51:26Z",
       "merchant": "Amazon AU",
       "category": "Gaming",
-      "description": "Seems Amazon is price matching Kmart and EBGames. For those who won't be playing GTA6 tonight :) :) ATL as per Camel3x"
+      "description": "Seems Amazon is price matching Kmart and EBGames. For those who won't be playing GTA6 tonight :) :) ATL as per Camel3x Mod edit: PS5 sold out."
     },
     {
       "id": "983963",
