@@ -1,10 +1,100 @@
 {
   "source": "https://www.ozbargain.com.au/deals/feed",
-  "updatedAt": "2026-11-18T01:35:19.971035Z",
+  "updatedAt": "2026-11-18T02:28:32.378252Z",
   "items": [
     {
+      "id": "983896",
+      "title": "Gulf Western SYN-X 3000 10W-40 Semi Synthetic Engine Oil 5L $24.99 (Member Price) + Delivery ($0 C&C/in-Store) @ Autobarn",
+      "url": "https://www.ozbargain.com.au/node/983896",
+      "published": "2026-11-18T02:19:36Z",
+      "merchant": "Autobarn",
+      "category": "Automotive",
+      "description": "Semi-synthetic API SN/CF and ACEA A3/B4 Recommended for Petrol, LPG and lightly loaded diesel engines. Free to Join for Member-Only Deals"
+    },
+    {
+      "id": "983892",
+      "title": "Big Ass Fans - 30% off for Black Friday (Haiku L Ceiling Fan from $655 posted, save from $259.50)",
+      "url": "https://www.ozbargain.com.au/node/983892",
+      "published": "2026-11-18T02:09:39Z",
+      "merchant": "",
+      "category": "Home & Garden",
+      "description": "I came across this fan brand when looking for a ceiling fan with Matter support (for Apple HomeKit), and this brand apparently has a good reputation in general. What I …"
+    },
+    {
+      "id": "983891",
+      "title": "NAB Rewards Travel Card - Complimentary Lounge Access and Global eSIM with 7GB data",
+      "url": "https://www.ozbargain.com.au/node/983891",
+      "published": "2026-11-18T02:08:07Z",
+      "merchant": "",
+      "category": "Financial",
+      "description": "NAB Rewards Travel Card (rebranded from NAB Rewards Signature Card since 1 October 2026) offers 2 complimentary airport lounge visit entitlements each calendar year at participating Plaza Premium …"
+    },
+    {
+      "id": "983889",
+      "title": "Corsair K70 PRO TKL Hall Effect Gaming Keyboard $139 + Delivery ($0 C&C) @ Centre Com",
+      "url": "https://www.ozbargain.com.au/node/983889",
+      "published": "2026-11-18T02:04:36Z",
+      "merchant": "Centre Com",
+      "category": "Computing",
+      "description": "Seems to be an ATL on this wired TKL HE keyboard. JB-HiFi list it for $299 but might price beat? MGX Hyperdrive switches. Same price on Amazon Boost your gaming performance with the Corsair K70 …"
+    },
+    {
+      "id": "983888",
+      "title": "Starlink Mini $202.30 (Normally $289) + Monthly Service Plan @ Starlink",
+      "url": "https://www.ozbargain.com.au/node/983888",
+      "published": "2026-11-18T02:03:41Z",
+      "merchant": "Starlink",
+      "category": "Internet",
+      "description": "Seems like the mini is now on sale as part of the 30% off November Deal. Tried to price beat/match with JB and officeworks but no luck."
+    },
+    {
+      "id": "983887",
+      "title": "G-Fresh Herbs, Spices & Seasonings Sale (Starting from $1.99) @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/983887",
+      "published": "2026-11-18T02:02:36Z",
+      "merchant": "Amazon AU",
+      "category": "Groceries",
+      "description": "Amazon Australia has discounted a wide range of G-Fresh herbs, spices, refills, salts, and BBQ seasonings.. Refill packs start from just $1.99 (including Onion Powder, Paprika, Cumin, Oregano, …"
+    },
+    {
+      "id": "983886",
+      "title": "Fujifilm X-T30 III Mirrorless Camera, Charcoal Silver + XC 13-33mm Lens - AU Version $1372 Delivered @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/983886",
+      "published": "2026-11-18T01:55:26Z",
+      "merchant": "Amazon AU",
+      "category": "Electrical & Electronics",
+      "description": "Features: A pocketable camera that weighs only 378g, X-T30 III is the perfect choice for families and travel, Traditional, dial-operated design interchangeable lens camera Create …"
+    },
+    {
+      "id": "983885",
+      "title": "Kebtek 40mm Electric Pruning Shears KT940 $314.49 Delivered @ Kebtek via Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/983885",
+      "published": "2026-11-18T01:46:44Z",
+      "merchant": "Kebtek via Amazon AU",
+      "category": "Home & Garden",
+      "description": "Highly rated pruners, my favourite feature is progressive cutting. $314.49 is close to the ATL ($298) but 10% cashback from TopCashBack brings it down to a new low at $285.90. (Price after cashback …"
+    },
+    {
+      "id": "983884",
+      "title": "Rooftop Power Hub for Starlink Mini + Free 5m Harness & Mounting Hardware $440 Delivered (Was $549.99) @ Kettle Customs",
+      "url": "https://www.ozbargain.com.au/node/983884",
+      "published": "2026-11-18T01:44:11Z",
+      "merchant": "Kettle Customs",
+      "category": "Automotive",
+      "description": "Hi OzB, I'm Riley from Kettle Customs. We make these in our own workshop in Somerville VIC, so I'm posting as associated. A lot of you picked up a Mini in the recent Bunnings/BCF/Harvey …"
+    },
+    {
+      "id": "983883",
+      "title": "Castrol Magnatec 10W-40 Engine Oil 5 Litre $35.09 + Delivery ($0 Prime/ $59 Spend) @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/983883",
+      "published": "2026-11-18T01:36:58Z",
+      "merchant": "Amazon AU",
+      "category": "Automotive",
+      "description": "Price is for 5L, down from $58.99 Semi synthetic. Free shipping with prime or over $59 spend. I like a reliable Castrol oil for my 6 monthly oil changes for thr car. This price is pretty …"
+    },
+    {
       "id": "983882",
-      "title": "Join Origin nbn or OptiComm & Get a $100 Uber Eats Voucher (New Customers) @ Origin",
+      "title": "Join Origin nbn or OptiComm & Get a $100 Uber Eats Voucher (New or Moving Customers) @ Origin",
       "url": "https://www.ozbargain.com.au/node/983882",
       "published": "2026-11-18T01:28:29Z",
       "merchant": "Origin",
@@ -13,7 +103,7 @@
     },
     {
       "id": "983881",
-      "title": "Nulon Fusion 5W-30 Multi Vehicle Performance Full Synthetic Engine Oil 5L $34.99 ($0 C&C/in-store) @ Autobarn",
+      "title": "Nulon Fusion 5W-30 Multi Vehicle Performance Full Synthetic Engine Oil 5L $34.99 + Delivery ($0 C&C/in-store) @ Autobarn",
       "url": "https://www.ozbargain.com.au/node/983881",
       "published": "2026-11-18T01:23:51Z",
       "merchant": "Autobarn",
@@ -31,16 +121,16 @@
     },
     {
       "id": "983878",
-      "title": "Anko 4 Pack Foam Stretch Roller $20 + $8 Delivery ($0 C&C/in-Store) @ Target",
+      "title": "Clearance: Anko 4 Pack Foam Stretch Roller $20 + $8 Delivery ($0 C&C/in-Store) @ Target",
       "url": "https://www.ozbargain.com.au/node/983878",
       "published": "2026-11-18T01:11:12Z",
       "merchant": "Target",
       "category": "Sports & Outdoors",
-      "description": "The algorithm kept showing me ads for the Lotus Wheel 4-Pack at $189. Then I found Target's Anko knock-off for $20, which is about 11% of the price. Anko 4 Pack ($20) Four wheels, all 12.5cm …"
+      "description": "The algorithm kept showing me ads for the Lotus Wheel 4-Pack at $189. Then I found Target's Anko knock-off on clearance for $20, which is about 11% of the price. Anko 4 Pack ($20) Four …"
     },
     {
       "id": "983876",
-      "title": "Nescafe Iced Coffee Mocha Can 237mL $2 @ Woolworths",
+      "title": "Nescafé Ready To Drink Coffee Can 237ml $2 @ Woolworths",
       "url": "https://www.ozbargain.com.au/node/983876",
       "published": "2026-11-18T01:05:26Z",
       "merchant": "Woolworths",
@@ -103,10 +193,10 @@
     },
     {
       "id": "983868",
-      "title": "Boost Mobile $300 Prepaid SIM 365 Days (Activate by 15 Feb 27 for 300GB) $221 Delivered if paid by Afterpay@ Lucky Mobile eBay",
+      "title": "[Afterpay] Boost Mobile $300 Prepaid SIM 365 Days (Activate by 15 Feb 27 for 300GB) $221 Delivered @ Lucky Mobile eBay",
       "url": "https://www.ozbargain.com.au/node/983868",
       "published": "2026-11-18T00:35:06Z",
-      "merchant": "",
+      "merchant": "Lucky Mobile eBay",
       "category": "Mobile",
       "description": "Boost Mobile $300 Prepaid SIM 365 Days (Activate by 15 Feb 27 for 300GB) $221 Delivered if paid by Afterpay using the code APXBF from our eBay store: https://www.ebay.com.au/itm/820342290137 SIM …"
     },
