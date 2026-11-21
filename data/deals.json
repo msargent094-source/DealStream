@@ -1,13 +1,103 @@
 {
   "source": "https://www.ozbargain.com.au/deals/feed",
-  "updatedAt": "2026-11-21T04:32:26.374270Z",
+  "updatedAt": "2026-11-21T05:28:22.957004Z",
   "items": [
     {
+      "id": "984641",
+      "title": "Diablo 184mm 24T Framing Circular Saw Blade $36 (RRP $47.85) @ Total Tools",
+      "url": "https://www.ozbargain.com.au/node/984641",
+      "published": "2026-11-21T05:26:29Z",
+      "merchant": "Total Tools",
+      "category": "Home & Garden",
+      "description": "Appears that all Diablo Blades are 25% off at the moment. Bunnings has also price matched,"
+    },
+    {
+      "id": "984640",
+      "title": "Pay with Mastercard for 8% off Hotels @Trip.com",
+      "url": "https://www.ozbargain.com.au/node/984640",
+      "published": "2026-11-21T05:22:03Z",
+      "merchant": "",
+      "category": "Travel",
+      "description": "Found this deal while booking for my Christmas trip, just need to click through the link and make the booking. How to redeem Copy the coupon code: …"
+    },
+    {
+      "id": "984637",
+      "title": "[NSW] FREE End-Of-Year Pool Party For High School Students (Friday 11/12) @ Victoria Park Pool, Camperdown, SYD",
+      "url": "https://www.ozbargain.com.au/node/984637",
+      "published": "2026-11-21T05:12:13Z",
+      "merchant": "Victoria Park Pool, Camperdown, SYD",
+      "category": "Sports & Outdoors",
+      "description": "Event Details Time: 3pm - 7pm Date: Friday, 11 December 2026 Address: Victoria Park Pool Parramatta Road, Camperdown NSW, Australia Google …"
+    },
+    {
+      "id": "984636",
+      "title": "Kronax 6000lm Cordless LED Work Light (Milwaukee/Makita 18V) $118.70, 7000lm Corded/Cordless Light $156.70 Delivered @ Kronax",
+      "url": "https://www.ozbargain.com.au/node/984636",
+      "published": "2026-11-21T05:08:08Z",
+      "merchant": "Kronax",
+      "category": "Home & Garden",
+      "description": "Hi OzBargainers, Kronax here. We've got Black Friday pricing on our tripod work lights, and the code OZBARGAIN5 takes an extra 5% off for the next 48 hours: Cordless 6,000 lumen LED work light …"
+    },
+    {
+      "id": "984635",
+      "title": "Logitech G305 Lightspeed Wireless Gaming Mouse, Black $39.99 (RRP $99.95) +Delivery ($0 Prime/$59 Spend) @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/984635",
+      "published": "2026-11-21T05:03:59Z",
+      "merchant": "Amazon AU",
+      "category": "Electrical & Electronics",
+      "description": "Lowest price was $38.90 in July on camelcamel camel. Decent gift that won't break the bank for those Christmas exchanges coming up! Features: Built-in Hero sensor offers 200 to …"
+    },
+    {
+      "id": "984634",
+      "title": "Mizuno Wave Sky 9 Womens Running Shoes $94.99 @Rebel",
+      "url": "https://www.ozbargain.com.au/node/984634",
+      "published": "2026-11-21T05:02:19Z",
+      "merchant": "",
+      "category": "Sports & Outdoors",
+      "description": "shoes. regular width. Mens also on Clearance Mizuno Wave Sky 9 Womens Running Shoes"
+    },
+    {
+      "id": "984632",
+      "title": "DIY 1/72 AV-8B Harrier II Aircraft Model Kit Assembly W/Stand A$28.45 Shiped @diytoymodel",
+      "url": "https://www.ozbargain.com.au/node/984632",
+      "published": "2026-11-21T04:47:25Z",
+      "merchant": "",
+      "category": "Toys & Kids",
+      "description": "16% OFF Glue-free, quick build. No need to color! A gift that gets the kids away from their screens."
+    },
+    {
+      "id": "984631",
+      "title": "[Bunnings Clearance] Ryobi One+ 18V 55cm HP Brushless Cordless Hedge Trimmer Kit $100",
+      "url": "https://www.ozbargain.com.au/node/984631",
+      "published": "2026-11-21T04:47:18Z",
+      "merchant": "",
+      "category": "Home & Garden",
+      "description": "Found this deal at Bunnings Acacia Ridge selling for $100 with 2ah battery and charger included! Tool only costs $219 on the website."
+    },
+    {
+      "id": "984630",
+      "title": "[Refurb, Paypal] Aiper Scuba Cordless Robotic Pool Cleaner S1 Pro $575, X1 Pro Max $1303 Delivered @ Aiper Aliexpress",
+      "url": "https://www.ozbargain.com.au/node/984630",
+      "published": "2026-11-21T04:34:50Z",
+      "merchant": "Aiper Aliexpress",
+      "category": "Electrical & Electronics",
+      "description": "Shipped from Aiper Australia warehouse. The Aiper S1 Pro was their top of the range until last year. It does a good job cleaning in my experience of an odd-shaped 40,000l pool (leaves, branches, …"
+    },
+    {
+      "id": "984628",
+      "title": "Griot's Garage Ceramic 3 in 1 Wax 650ml $48.74 (Member Price) + Delivery ($0 C&C/in-Store) @ Autobarn",
+      "url": "https://www.ozbargain.com.au/node/984628",
+      "published": "2026-11-21T04:30:00Z",
+      "merchant": "Autobarn",
+      "category": "Automotive",
+      "description": "Never seen it this low before, the best on the market. Only found at in-store at autobarn unless you import it from USA. Did a coat today"
+    },
+    {
       "id": "984627",
-      "title": "El Jannah chicken free El Jannah Quarter (1/4) Chicken Deluxe Meal on your Birthday month App sign up required [NSW, ACT, SA,VIC",
+      "title": "[NSW, VIC, ACT, SA] Free Quarter (1/4) Chicken Deluxe Meal in Your Birthday Month (App Sign-Up Required) @ El Jannah",
       "url": "https://www.ozbargain.com.au/node/984627",
       "published": "2026-11-21T04:15:50Z",
-      "merchant": "",
+      "merchant": "El Jannah",
       "category": "Dining & Takeaway",
       "description": "Came up on my app as November is my birthday month. This legendary Quarter Chicken Deluxe Meal is the essence of El Jannah, served with our famous toum (garlic sauce), medium chips sprinkled in …"
     },
@@ -157,10 +247,10 @@
     },
     {
       "id": "984602",
-      "title": "Black Friday Multibuy Offer: 4 Shirts or Polos for $199 (Save up to $355) + 25% off Everything Else @Charles Tyrwhitt",
+      "title": "4 Shirts or Polos $199 (Save up to $355) + 25% off Selected Items + $19.95 Delivery @ Charles Tyrwhitt",
       "url": "https://www.ozbargain.com.au/node/984602",
       "published": "2026-11-21T01:17:46Z",
-      "merchant": "",
+      "merchant": "Charles Tyrwhitt",
       "category": "Fashion & Apparel",
       "description": "Multi-buy offers (for example, buy 4 shirts for $199) only apply to those products to which the multi-buy offer applies and are clearly displayed as such. Multi-buy offers are not valid when used in …"
     },
