@@ -1,13 +1,103 @@
 {
   "source": "https://www.ozbargain.com.au/deals/feed",
-  "updatedAt": "2026-11-22T01:40:18.431103Z",
+  "updatedAt": "2026-11-22T03:26:15.035980Z",
   "items": [
     {
+      "id": "984745",
+      "title": "[Xbox S/X] Final Fantasy VII Remake Intergrade $13.99, Final Fantasy VII Rebirth $12.74 @ Xbox",
+      "url": "https://www.ozbargain.com.au/node/984745",
+      "published": "2026-11-22T03:08:47Z",
+      "merchant": "Xbox",
+      "category": "Gaming",
+      "description": "Same pricing as recent switch2 deal (the 2 stores clearly have the same margins). https://www.ozbargain.com.au/node/981371 Remake: https://www.xbox.com/en-AU/games/store/final-fantasy-vii-rem…"
+    },
+    {
+      "id": "984744",
+      "title": "Dell 32 Plus 4K QD-OLED Monitor - S3225QC $710.73 Delivered @ Dell",
+      "url": "https://www.ozbargain.com.au/node/984744",
+      "published": "2026-11-22T03:02:19Z",
+      "merchant": "Dell",
+      "category": "Computing",
+      "description": "32-inch 4K QD-OLED monitor at 120 Hz Integrated speakers with spatial audio Also there's x2 Dell rewards (6%) plus bonus $25 Dell rewards $638.76 delivered with Student discount (20% off …"
+    },
+    {
+      "id": "984743",
+      "title": "ASICS Men's GEL-Kayano 33 Running Shoes $200 Delivered @ Sports Direct",
+      "url": "https://www.ozbargain.com.au/node/984743",
+      "published": "2026-11-22T03:02:16Z",
+      "merchant": "Sports Direct",
+      "category": "Sports & Outdoors",
+      "description": "ASICS GEL-Kayano 33 running shoes available at Sports Direct Australia. The GEL-Kayano series is known for its stability and cushioning, making it a popular choice for everyday running, walking and …"
+    },
+    {
+      "id": "984742",
+      "title": "[VIC] Deye AI-W5.1 All-in-One 5kw + 25.6kwh Battery $4,999 Installed after STCs (3P 10kw $5,899) @ Enerforge",
+      "url": "https://www.ozbargain.com.au/node/984742",
+      "published": "2026-11-22T02:55:57Z",
+      "merchant": "Enerforge",
+      "category": "Electrical & Electronics",
+      "description": "Hi OzBargainers, Enquire via our enquiry form Another OzBargain-exclusive battery deal from Enerforge. It's not advertised anywhere else, and these prices only apply to enquiries that mention …"
+    },
+    {
+      "id": "984741",
+      "title": "Motorola Razr Fold 5G 256GB $1996 + Delivery ($0 C&C/ in-Store) @ JB Hi-Fi",
+      "url": "https://www.ozbargain.com.au/node/984741",
+      "published": "2026-11-22T02:52:38Z",
+      "merchant": "JB Hi-Fi",
+      "category": "Mobile",
+      "description": "803$ off retail price, good alternative to Samsung Galaxy Z Fold or Pixel Fold 11 Key features Screen: 8.1\" foldable AMOLED display, 120Hz refresh & 6,200-nit peak brightness Camera: Triple …"
+    },
+    {
+      "id": "984740",
+      "title": "Sony FE 70-200mm F2.8 GM OSS II Lens $2599 + Delivery ($0 C&C/ in-Store) (+ Bonus $300 Sony Cashback) @ JB Hi-Fi",
+      "url": "https://www.ozbargain.com.au/node/984740",
+      "published": "2026-11-22T02:39:33Z",
+      "merchant": "JB Hi-Fi",
+      "category": "Electrical & Electronics",
+      "description": "Effectively $2300. Pretty good for brand new considering box damaged on Ebay goes for ~$2600 and seconds goes for ~$2300 (and they are also rarely in stock unlike the f4 version)."
+    },
+    {
+      "id": "984738",
+      "title": "Finish Ultimate Dishwashing Tablets 70 Pack $30.40 + Delivery ($0 Prime/$59 Spend) @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/984738",
+      "published": "2026-11-22T02:25:39Z",
+      "merchant": "Amazon AU",
+      "category": "Groceries",
+      "description": "Lowest price in 6 months and close to ATL (per CamelCamelCamel). Features: DEEP CLEAN PERFORMANCE: Finish Ultimate dishwashing tablets for a deep clean first time, every time - even …"
+    },
+    {
+      "id": "984737",
+      "title": "Polygon Bicycles Black Friday Sale (E.g. Polygon Strattos 7 - 105 Di2 $2,899, Was $3,899) + Delivery ($48 to SYD) @ BikesOnline",
+      "url": "https://www.ozbargain.com.au/node/984737",
+      "published": "2026-11-22T02:20:50Z",
+      "merchant": "BikesOnline",
+      "category": "Sports & Outdoors",
+      "description": "I purchased a Polygon Strattos 7 Di2 from BikesOnline 3 months ago and am very happy with the bike. This is great value for a 105 Di2 carbon frame bike. It has an endurance geometry, so is quite …"
+    },
+    {
+      "id": "984735",
+      "title": "Panasonic Evolta AA Premium Alkaline Batteries, 18-Pack $8 ($7.20 S&S) + Delivery ($0 Prime/$59 Spend) @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/984735",
+      "published": "2026-11-22T02:00:45Z",
+      "merchant": "Amazon AU",
+      "category": "Electrical & Electronics",
+      "description": "Seems to be all time low, I have bought a few of these in AA and AAA and they are alright but not super long lasting. AAA is also the same price."
+    },
+    {
+      "id": "984734",
+      "title": "Anker Soundcore Space A40 Adaptive Noise Cancelling Wireless Earbuds $69.99 Delivered @ AnkerDirect AU via Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/984734",
+      "published": "2026-11-22T01:52:18Z",
+      "merchant": "AnkerDirect AU via Amazon AU",
+      "category": "Electrical & Electronics",
+      "description": "Anker Space A40 ANC earbuds. $10 cheaper than last year Review here"
+    },
+    {
       "id": "984732",
-      "title": "motorola razr 60 Swarovski 256GB - PANTONE Ice Melt $747 + Delivery (Free C/C) @Harveynorman",
+      "title": "Motorola Razr 60 Swarovski 256GB PANTONE Ice Melt $747 (Was $1,499) + Delivery ($0 C&C/In-Store) @ Harvey Norman",
       "url": "https://www.ozbargain.com.au/node/984732",
       "published": "2026-11-22T01:37:38Z",
-      "merchant": "",
+      "merchant": "Harvey Norman",
       "category": "Mobile",
       "description": "Make it smarter. Make it last longer. Make it even more iconic. Introducing motorola razr 60. Set yourself apart from the crowd with an ultra-compact, durable design featuring distinctive finishes in …"
     },
@@ -22,21 +112,21 @@
     },
     {
       "id": "984730",
-      "title": "Li Ning Wade 808 6 Ultra, Blue Sky Athletics, $153 shipped",
+      "title": "Li Ning Wade 808 6 Ultra Basketball Shoes $153 Shipped @ Blue Sky Athletics",
       "url": "https://www.ozbargain.com.au/node/984730",
       "published": "2026-11-22T01:32:04Z",
-      "merchant": "",
+      "merchant": "Blue Sky Athletics",
       "category": "Sports & Outdoors",
       "description": "Rarely do Wades go on sale. Local stock so easier to exchange if required. This is cheaper than from AliExpress. Perviously had the WoW 10 and unfortunately WoW 12 aren’t on sale but these are a …"
     },
     {
       "id": "984728",
-      "title": "Duracell Coppertop Alkaline AA, 20 Pack Batteries $13.99 +Delivery ($0 Prime/ $59 Spend) @ Amazon AU",
+      "title": "Duracell Coppertop Alkaline AA/AAA Batteries 20pk $13.99 ($12.59 Subscribe & Save) + Delivery ($0 Prime/ $59 Spend) @ Amazon AU",
       "url": "https://www.ozbargain.com.au/node/984728",
       "published": "2026-11-22T01:00:55Z",
       "merchant": "Amazon AU",
       "category": "Electrical & Electronics",
-      "description": "Lowest price this year. Features: Long-Lasting Power: AA batteries engineered to deliver the long-lasting power you need for all your household devices Leak Protection: Protects your …"
+      "description": "Lowest price this year. AAA too Features: Long-Lasting Power: AA batteries engineered to deliver the long-lasting power you need for all your household devices Leak Protection: …"
     },
     {
       "id": "984727",
@@ -49,10 +139,10 @@
     },
     {
       "id": "984724",
-      "title": "PlayStation 5 Disc Console $1008 Delivered ($999 + $9 Delivery Fee) @ BIG W via Woolworths Marketplace",
+      "title": "PlayStation 5 Disc Console $999 + $9/$12 Delivery @ BIG W via Everyday Marketplace",
       "url": "https://www.ozbargain.com.au/node/984724",
       "published": "2026-11-22T00:50:09Z",
-      "merchant": "BIG W via Woolworths Marketplace",
+      "merchant": "BIG W via Everyday Marketplace",
       "category": "Gaming",
       "description": "The PlayStation 5 Disc Console (1TB) is currently $999 + $9 delivery from BIG W on Everyday Market (Woolworths) online. When combined with the current 20% ShopBack \"Upsized\" cashback and …"
     },
@@ -67,7 +157,7 @@
     },
     {
       "id": "984721",
-      "title": "PC Bitdefender Total Security - A$23.98 - 5 Devices for 1 Year @ Fanatical",
+      "title": "Bitdefender Total Security 5 Devices 1 Year $23.98 @ Fanatical",
       "url": "https://www.ozbargain.com.au/node/984721",
       "published": "2026-11-22T00:18:43Z",
       "merchant": "Fanatical",
@@ -85,7 +175,7 @@
     },
     {
       "id": "984719",
-      "title": "10000mAh 20W LFP Power Bank $22.80 (RRP $49.95) +Delivery ($0 Prime/ $59 Spend) @ Amazon AU",
+      "title": "Laser 10000mAh LiFePO4 20W Power Bank $22.80 (RRP $49.95) + Delivery ($0 with Prime/ $59 Spend) @ Amazon AU",
       "url": "https://www.ozbargain.com.au/node/984719",
       "published": "2026-11-22T00:07:08Z",
       "merchant": "Amazon AU",
@@ -103,7 +193,7 @@
     },
     {
       "id": "984716",
-      "title": "Laser Portable 10000mAh Power Bank – 20W USB-C Fast Charger with… $18.05 (RRP $26.05) +Delivery ($0 Prime/$59 Spend) @ Amazon AU",
+      "title": "Laser 10000mAh Power Bank with LED Display 20W USB-C $18.05 (RRP $26.05) + Delivery ($0 with Prime/ $59 Spend) @ Amazon AU",
       "url": "https://www.ozbargain.com.au/node/984716",
       "published": "2026-11-21T23:53:11Z",
       "merchant": "Amazon AU",
@@ -121,10 +211,10 @@
     },
     {
       "id": "984713",
-      "title": "[Rhodes NSW Instore] Mattradition $89.10 (Was $399) Fan Forced Oven @ IKEA",
+      "title": "[NSW] Mattradition Fan Forced Oven $89.10 (Was $699) (In-Store Only) @ IKEA (Rhodes)",
       "url": "https://www.ozbargain.com.au/node/984713",
       "published": "2026-11-21T22:57:30Z",
-      "merchant": "IKEA",
+      "merchant": "IKEA (Rhodes)",
       "category": "Home & Garden",
       "description": "There was a separate post with the MATTRADITION ovens currently $499 (Black / White) $399 for Stainless Steel down from $699 on their website. Saw them further marked down to $89.10 for all colours …"
     },
