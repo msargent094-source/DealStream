@@ -1,23 +1,50 @@
 {
   "source": "https://www.ozbargain.com.au/deals/feed",
-  "updatedAt": "2026-11-22T10:26:46.344482Z",
+  "updatedAt": "2026-11-22T11:32:50.454397Z",
   "items": [
     {
+      "id": "984808",
+      "title": "30% off Starlink Residential Subscriptions if Signed up before 30 November",
+      "url": "https://www.ozbargain.com.au/node/984808",
+      "published": "2026-11-22T11:28:27Z",
+      "merchant": "",
+      "category": "Internet",
+      "description": "No contract, month by month, first 30 ays are free, no equipment cost (needs to be returned if service is cancelled). This means: 100mbs = $52.50/mo 200mbs = $77.00/mo Max = $105/mo Doesn't …"
+    },
+    {
+      "id": "984803",
+      "title": "Maxwell & Williams White Basics Lion Soup Bowl 410ml (Pack of 2) $6.25 + Delivery ($0 Prime/ $59 Spend) @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/984803",
+      "published": "2026-11-22T10:37:26Z",
+      "merchant": "Amazon AU",
+      "category": "Home & Garden",
+      "description": "$6.25 for 2 pack ($3.13 per bowl). I think the Amazon pricing is a bit off but it works out to 70% off RRP comparing to the 6 pack on Maxwell Williams website. They are currently doing 40% off for …"
+    },
+    {
+      "id": "984802",
+      "title": "30% off on your order of $20+ @ 7-ELEVEN. Up to $10 off. Via DoorDash",
+      "url": "https://www.ozbargain.com.au/node/984802",
+      "published": "2026-11-22T10:33:23Z",
+      "merchant": "7-ELEVEN. Up to $10 off. Via DoorDash",
+      "category": "Groceries",
+      "description": "Get 30% off on your order of $20+ at 7-ELEVEN. Up to $10 off. Use code: 7E4YOU. Now - 31/12 Orders must have a minimum subtotal of $20, excluding taxes and fees. The maximum value of this discount …"
+    },
+    {
       "id": "984800",
-      "title": "[Refurbished - Excellent] Targus Universal USB-C Dual 4K Docking Station (100w PD, DOCK190AUZ) $64 Shipped @ Amazon AU",
+      "title": "[Refurb] Targus Universal USB-C Dual 4K Docking Station (100w PD, DOCK190AUZ) $64 Shipped @ Harris Technology Renew Amazon AU",
       "url": "https://www.ozbargain.com.au/node/984800",
       "published": "2026-11-22T10:21:25Z",
-      "merchant": "Amazon AU",
-      "category": "Electrical & Electronics",
+      "merchant": "Harris Technology Renew Amazon AU",
+      "category": "Computing",
       "description": "Great Targus Docking station supporting Mac and Windows.. 12 month Amazon warranty .. Refurbished Excellent Solid price for a 100W DisplayLink dock if you don't mind Amazon Renewed …"
     },
     {
       "id": "984797",
-      "title": "SanDisk 64GB Ultra SDXC 140MB/s R UHS-I Memory Card $10 (+Delivery or Pickup) @ MWave",
+      "title": "SanDisk 64GB Ultra SDXC 140MB/s R UHS-I Memory Card $10 + Delivery ($0 NSW C&C) @ Mwave",
       "url": "https://www.ozbargain.com.au/node/984797",
       "published": "2026-11-22T10:08:21Z",
-      "merchant": "MWave",
-      "category": "Electrical & Electronics",
+      "merchant": "Mwave",
+      "category": "Computing",
       "description": "I assume must be running them out (like Officeworks did). Extremely cheap for a 64GB card (these days - sigh!). They also have the 32GB version on sale (for $20 - which is technically also cheap …"
     },
     {
@@ -40,7 +67,7 @@
     },
     {
       "id": "984791",
-      "title": "Square Integrated POS - EFTPOS Register (2nd Gen) $656 with Price Beat @ The Good Guys",
+      "title": "Square Integrated POS - EFTPOS Register (2nd Gen) $659 ($656 Using Price Check) + Delivery @ The Good Guys",
       "url": "https://www.ozbargain.com.au/node/984791",
       "published": "2026-11-22T09:08:07Z",
       "merchant": "The Good Guys",
@@ -90,7 +117,7 @@
       "published": "2026-11-22T08:43:59Z",
       "merchant": "Amazon AU",
       "category": "Electrical & Electronics",
-      "description": "Seems to be the ATL as far as Amazon is concerned. While its primary use is for audio management when streaming, it's very handy for quick isolation of mic/discord chat and game sounds. Great …"
+      "description": "Seems to be the ATL as far as Amazon is concerned. Great for those who struggle to multitask with music/microphones and game sounds. (E.g. those who turn down the volume in the car to find their …"
     },
     {
       "id": "984784",
