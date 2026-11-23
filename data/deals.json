@@ -1,13 +1,121 @@
 {
   "source": "https://www.ozbargain.com.au/deals/feed",
-  "updatedAt": "2026-11-23T08:29:54.073328Z",
+  "updatedAt": "2026-11-23T09:31:04.790239Z",
   "items": [
     {
+      "id": "985063",
+      "title": "Samsung Galaxy Z Fold8 Ultra 256GB $1900, 512GB $2100 Delivered / Mobile Trade-in Available @ Phonex",
+      "url": "https://www.ozbargain.com.au/node/985063",
+      "published": "2026-11-23T09:23:30Z",
+      "merchant": "Phonex",
+      "category": "Mobile",
+      "description": "Hi All, Aus Stock Aus Warranty Tax invoice included Trade-in Available LINK: https://phonex.au/trade-in Use Discount code Galaxy Z Fold8 Ultra 256GB / 12GB – $1900 (PXZF8U256) 512GB / 12GB – …"
+    },
+    {
+      "id": "985062",
+      "title": "Team T-Force Delta RGB 16GB (2x8GB) 5200MHz CL40 DDR5 RAM $269 + Delivery ($0 to Metro/ VIC, NSW, QLD C&C) @ Scorptec",
+      "url": "https://www.ozbargain.com.au/node/985062",
+      "published": "2026-11-23T09:19:41Z",
+      "merchant": "Scorptec",
+      "category": "Computing",
+      "description": "Cheapest 2 stick 16GB DDR5 available at the moment. CL40 and 5200mhz though. price history: https://www.pgrid.app/au/rams/teamgroup-t-force-delta-rgb-dd…"
+    },
+    {
+      "id": "985061",
+      "title": "HIFIMAN Edition XS Headphones US$123.14 (~A$185.65) [Elite] US$115.03 (~A$173.42) w/ PayPal Shipped @ HIFIMAN Local AliExpress",
+      "url": "https://www.ozbargain.com.au/node/985061",
+      "published": "2026-11-23T09:19:12Z",
+      "merchant": "HIFIMAN Local AliExpress",
+      "category": "Electrical & Electronics",
+      "description": "Here we have a new record low price beating every previous deal including Singles Day on these awesome HIFIMAN headphones with the Upgraded Headband for better comfort. Best of all it can be stacked …"
+    },
+    {
+      "id": "985060",
+      "title": "SmallRig 72\" Aluminum Camera Tripod Monopod, 360° Panoramic Ball… $70.63 (RRP $100.90) Delivered @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/985060",
+      "published": "2026-11-23T09:18:04Z",
+      "merchant": "Amazon AU",
+      "category": "Other",
+      "description": "I just scrolled my amazon find this tripod is on sale now , I just checked that its almost the lowest price ever, and this brand is good I think"
+    },
+    {
+      "id": "985059",
+      "title": "[NSW] 50% off Full Season Sydney FC GA Memberships - $160 for Adult, $100 for Junior",
+      "url": "https://www.ozbargain.com.au/node/985059",
+      "published": "2026-11-23T09:11:48Z",
+      "merchant": "",
+      "category": "Entertainment",
+      "description": "Black Friday deal - not sure when it expires. 10 homes games left for Sydney FC, so equates to $16 a game for adult."
+    },
+    {
+      "id": "985058",
+      "title": "Trouble & Trix Ultra Scoop Cat Litter 10L x 3 for $50 @Petbarn (Instore member only deal stack)",
+      "url": "https://www.ozbargain.com.au/node/985058",
+      "published": "2026-11-23T09:09:49Z",
+      "merchant": "",
+      "category": "Pets",
+      "description": "Instore Buy 2 get 1 free stacks with buy 2 or more discounts to $25 each. Works out at $1.66/L. Other variants also had both discounts displayed so pick up your cat's favourite cheaper than …"
+    },
+    {
+      "id": "985056",
+      "title": "Ozito Ultimate Sanding Kit $89 + Delivery ($0 OnePass / C&C) @ Bunnings",
+      "url": "https://www.ozbargain.com.au/node/985056",
+      "published": "2026-11-23T09:03:44Z",
+      "merchant": "Bunnings",
+      "category": "Home & Garden",
+      "description": "$169.86 worth of tools for $89! Part of OnePass Black Friday early access (available now for OnePass holders), with general access from midnight tonight. Currently marked as available for delivery …"
+    },
+    {
+      "id": "985055",
+      "title": "Xbox Wireless Headset (Xbox Series X|S, Xbox One & Windows) $119 + Delivery ($0 C&C/ in-Store) @ Target",
+      "url": "https://www.ozbargain.com.au/node/985055",
+      "published": "2026-11-23T08:59:30Z",
+      "merchant": "Target",
+      "category": "Gaming",
+      "description": "The Xbox Wireless Headset is currently available for $119, down from $159. Xbox Wireless Headset – Xbox Series X|S, Xbox One & Windows Devices Features: • Direct wireless connection to Xbox …"
+    },
+    {
+      "id": "985053",
+      "title": "Milwaukee Fuel 3-Piece Pack: M12 Stubby Impact 3/8\", Insider Extended Ratchet, M18 Impact 1/2\", 3x Batt & Charger $1150 @ Repco",
+      "url": "https://www.ozbargain.com.au/node/985053",
+      "published": "2026-11-23T08:47:56Z",
+      "merchant": "Repco",
+      "category": "Automotive",
+      "description": "Repeat of this deal: https://www.ozbargain.com.au/node/953570 The kit is designed for automotive use/mechanics. Premium gear. Be the envy of your mates while working on your clapped out Toyota …"
+    },
+    {
+      "id": "985051",
+      "title": "ALL Signature - Rewards Program Black Friday 40%/30% off for New/Former Member",
+      "url": "https://www.ozbargain.com.au/node/985051",
+      "published": "2026-11-23T08:36:30Z",
+      "merchant": "",
+      "category": "Travel",
+      "description": "Black Friday: Join ALL Signature with up to 40% OFF and unlock even more rewards! New subscribers: use promo code BLACKFRIDAY2026 at checkout. Former subscribers: come back with promo code …"
+    },
+    {
+      "id": "985050",
+      "title": "WiiM Amp / Amp Pro Streaming Amplifier $439 / $594 (RRP $549 / $699) Delivered @ Amazon AU (& other retailers)",
+      "url": "https://www.ozbargain.com.au/node/985050",
+      "published": "2026-11-23T08:33:39Z",
+      "merchant": "Amazon AU (& other retailers)",
+      "category": "Electrical & Electronics",
+      "description": "Have been curious about these amps for a while and saw they are currently on sale for 15 % off at Amazon and various HiFi retailers - Google Unfortunately RRP was increased earlier this year, so …"
+    },
+    {
+      "id": "985049",
+      "title": "Chess.com Black Friday: 50% off Yearly Memberships (Gold A$32.49, Platinum A$52.49, Diamond A$79.99)",
+      "url": "https://www.ozbargain.com.au/node/985049",
+      "published": "2026-11-23T08:27:56Z",
+      "merchant": "",
+      "category": "Gaming",
+      "description": "Chess.com is running its Black Friday sale with half price on all yearly plans. Prices are already in AUD, so you won't get hit with conversion fees. Plan Was Now Per month Gold A$64.99 …"
+    },
+    {
       "id": "985048",
-      "title": "Sennheiser Momentum True Wireless 4 in-Ear Headphones Black Copper $249 ($187.6 after Extra 25% off - eBay Plus Required) @ eBay",
+      "title": "[eBay Plus] Sennheiser Momentum True Wireless 4 in-Ear Headphones Black Copper $186.80 Delivered @ Sennheiser eBay",
       "url": "https://www.ozbargain.com.au/node/985048",
       "published": "2026-11-23T08:23:44Z",
-      "merchant": "eBay",
+      "merchant": "Sennheiser eBay",
       "category": "Electrical & Electronics",
       "description": "Found this deal on Ebay as part of their black friday promo. Using the code BLKF25 gets you an extra 25% off the $249 dollars (eBay Plus required). Still a great deal regardless tho."
     },
@@ -22,7 +130,7 @@
     },
     {
       "id": "985046",
-      "title": "VIOFO A229 2K Dashcam US$114.53 (~A$172.67), w/ Rear Cam US$143.73 (~A$216.69) with PayPal Delivered @ VIOFO Official AliExpress",
+      "title": "VIOFO A229 2K Dashcam US$117.83 (~A$177.64), w/ Rear Cam US$147.03 (~A$221.66) with PayPal Delivered @ VIOFO Official AliExpress",
       "url": "https://www.ozbargain.com.au/node/985046",
       "published": "2026-11-23T08:09:37Z",
       "merchant": "VIOFO Official AliExpress",
@@ -58,10 +166,10 @@
     },
     {
       "id": "985040",
-      "title": "Yoga Pro 7a Gen 11 15\" Laptop $2,687.04 @Lenovo Education Store",
+      "title": "Yoga Pro 7a Gen 11 15\" Laptop $2,687.04 Delivered @ Lenovo Education Store",
       "url": "https://www.ozbargain.com.au/node/985040",
       "published": "2026-11-23T07:51:01Z",
-      "merchant": "",
+      "merchant": "Lenovo Education Store",
       "category": "Computing",
       "description": "The Lenovo yoga pro 7a gen 11 is a pretty decent premium/allrounder laptop Performance: AMD Ryzen™ AI Max+ 388 Processor (3.60 GHz up to 5.00 GHz) 32 GB LPDDR5X-8000MT/s (Soldered) Integrated AMD …"
     },
@@ -148,7 +256,7 @@
     },
     {
       "id": "985026",
-      "title": "Nintendo Switch 2 Sports Resort Bundle $804.95 Delivered (25% Shopback Cashback offer) @ EB Games via Everyday Market",
+      "title": "Nintendo Switch 2 Sports Resort Bundle $795 + $9.95 Delivery @ EB Games via Everyday Market",
       "url": "https://www.ozbargain.com.au/node/985026",
       "published": "2026-11-23T07:01:39Z",
       "merchant": "EB Games via Everyday Market",
