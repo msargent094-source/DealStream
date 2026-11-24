@@ -1,14 +1,95 @@
 {
   "source": "https://www.ozbargain.com.au/deals/feed",
-  "updatedAt": "2026-11-24T00:28:30.895212Z",
+  "updatedAt": "2026-11-24T01:28:39.325050Z",
   "items": [
     {
+      "id": "985148",
+      "title": "[Black Friday] Gigabyte Gaming A16 16\" Ryzen 7 260, RTX 5060, 16GB RAM, 512GB SSD, 165hz – $1,699 @ Umart",
+      "url": "https://www.ozbargain.com.au/node/985148",
+      "published": "2026-11-24T01:23:36Z",
+      "merchant": "Umart",
+      "category": "Computing",
+      "description": "Thought this was worth sharing for anyone looking for a gaming laptop around the $1,500–$2,000 mark. Umart currently has the Gigabyte Gaming A16 for $1,699, advertised as $1,100 off. I've …"
+    },
+    {
+      "id": "985147",
+      "title": "Lenovo 14\" Yoga Slim 7i OLED Ultra 5 16/512GB Copilot+ PC $1097 (In-Store Only) @ Officeworks",
+      "url": "https://www.ozbargain.com.au/node/985147",
+      "published": "2026-11-24T01:23:04Z",
+      "merchant": "Officeworks",
+      "category": "Computing",
+      "description": "Stay productive and creative wherever you go with the Lenovo Yoga Slim 7i. Designed for portability and performance, this ultra-slim Copilot+ PC combines an Intel Core Ultra 5 processor, 16GB RAM, …"
+    },
+    {
+      "id": "985145",
+      "title": "Bowden's Own The Big Green Sucker Microfibre Towel $19.80 (RRP $44) Delivered @ Repco eBay",
+      "url": "https://www.ozbargain.com.au/node/985145",
+      "published": "2026-11-24T01:17:39Z",
+      "merchant": "Repco eBay",
+      "category": "Automotive",
+      "description": "Close to an all time low, enjoy! I hinted this yesterday that Repco eBay has free delivey I remembered seeing an extra 10% off code on a previous adidas eBay deal that worked - thanks skido"
+    },
+    {
+      "id": "985144",
+      "title": "Free 10g Dog or Cat Samples (Up to 11 Samples) Delivered @ Ruffey Pets",
+      "url": "https://www.ozbargain.com.au/node/985144",
+      "published": "2026-11-24T01:12:00Z",
+      "merchant": "Ruffey Pets",
+      "category": "Pets",
+      "description": "Despite not having a dog or cat, the algorithm is now showing me pet food sample ads. Lunch sorted. Australian air-dried nutrition, sent to your door. Tell us about your pet, pick their flavours, …"
+    },
+    {
+      "id": "985143",
+      "title": "30-50% off Selected Live Music Concert Tickets @ Live Nation",
+      "url": "https://www.ozbargain.com.au/node/985143",
+      "published": "2026-11-24T01:09:29Z",
+      "merchant": "Live Nation",
+      "category": "Entertainment",
+      "description": "including: 50% off Guns N’ Roses 30% off The Strokes, The Avalanches, Belinda Carlisle"
+    },
+    {
+      "id": "985142",
+      "title": "Wolfbox Electric Air Duster DF50 $31.44 ($30.70 with eBay Plus) Delivered @ Wolfbox eBay",
+      "url": "https://www.ozbargain.com.au/node/985142",
+      "published": "2026-11-24T01:03:03Z",
+      "merchant": "Wolfbox eBay",
+      "category": "Electrical & Electronics",
+      "description": "Please refer to https://www.ozbargain.com.au/node/975494 for a comparison table made by Hiphopopotamus (say it 10 times fast) if you want to compare it to other WolfBox Air Duster models. Matching …"
+    },
+    {
+      "id": "985141",
+      "title": "Optimum Nutrition Gold Standard 100% Whey Protein Powder 1.79kg $114.79 ($103.31 S&S) Delivered @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/985141",
+      "published": "2026-11-24T01:00:19Z",
+      "merchant": "Amazon AU",
+      "category": "Groceries",
+      "description": "40% off Features: 24 Grams of Protein per Serving to promote muscle strength and repair 5.5 Grams of Naturally Occurring BCAAs per Serving to Support Endurance and Recovery Represents …"
+    },
+    {
+      "id": "985140",
+      "title": "30% Claro Ceiling Fans (e.g. Whisper Low Profile with Light $251.30) + Delivery @ Ceiling Fans Warehouse",
+      "url": "https://www.ozbargain.com.au/node/985140",
+      "published": "2026-11-24T00:44:23Z",
+      "merchant": "Ceiling Fans Warehouse",
+      "category": "Home & Garden",
+      "description": "Good deal for highly regarded fans: https://www.productreview.com.au/listings/claro-whisper-dc A lot of the fans also include a compatable wall control and smart module as an accessory, so not just …"
+    },
+    {
+      "id": "985139",
+      "title": "[NSW] 200 Free $10 MetCentre Gift Cards from 11am Wednesday (25/11) @ Wynyard Tunnel, MetCentre (Sydney)",
+      "url": "https://www.ozbargain.com.au/node/985139",
+      "published": "2026-11-24T00:42:51Z",
+      "merchant": "Wynyard Tunnel, MetCentre (Sydney)",
+      "category": "Other",
+      "description": "We're giving away 200 × $10 MetCentre gift cards, just for being in the right place at the right time.⠀ ⠀ 📅 WEDNESDAY 25 NOVEMBER⠀ 📍 Wynyard Tunnel, MetCentre⠀ ⏰ from …"
+    },
+    {
       "id": "985137",
-      "title": "Used] IdeaPad 5x 2-in-1 Snapdragon X 14\" OLED Touch Laptop (Scratch N Dent) 16GB RAM, 512GB SSD $429.75 Shipped @ Lenovo Outlet",
+      "title": "[Used] IdeaPad 5x 2-in-1 Snapdragon X 14\" OLED Touch Laptop (Scratch N Dent) 16GB RAM, 512GB SSD $429.75 Shipped @ Lenovo Outlet",
       "url": "https://www.ozbargain.com.au/node/985137",
       "published": "2026-11-24T00:21:45Z",
       "merchant": "Lenovo Outlet",
-      "category": "Electrical & Electronics",
+      "category": "Computing",
       "description": "Was $687.04 last month https://www.ozbargain.com.au/node/980830 They have the 1tb ssd version for $497.25 https://www.lenovo.com/au/outlet/en/p/laptops/ideapad/ideapa…"
     },
     {
@@ -22,7 +103,7 @@
     },
     {
       "id": "985135",
-      "title": "Virgin Australia Black Friday Sale: Domestic from $55 One Way, Bali from $439 Return @ BTF",
+      "title": "Virgin Australia Sale: Domestic Airfare from $55 One Way (Ballina Byron ↔ Sydney), Gold Coast-Bali from $439 Return @ BTF",
       "url": "https://www.ozbargain.com.au/node/985135",
       "published": "2026-11-24T00:17:56Z",
       "merchant": "BTF",
@@ -53,12 +134,12 @@
       "url": "https://www.ozbargain.com.au/node/985131",
       "published": "2026-11-24T00:02:05Z",
       "merchant": "Xteink",
-      "category": "Books & Magazines",
+      "category": "Electrical & Electronics",
       "description": "Why choose our X4 Pro? Unlocked Firmware Freedom: A pure developer operating system with zero third-party restrictions, choosing your best way to read on Xteink. Pocket-Sized 72g & 5.95mm Thin: …"
     },
     {
       "id": "985129",
-      "title": "Trezor Safe 7 $294, Safe 5 $129, Safe 3 $66 + Approx $33 Delivery @ Trezor",
+      "title": "Trezor Safe 7 $294, Safe 5 $129, Safe 3 $66 + ~$33 Delivery @ Trezor",
       "url": "https://www.ozbargain.com.au/node/985129",
       "published": "2026-11-23T23:52:03Z",
       "merchant": "Trezor",
@@ -94,10 +175,10 @@
     },
     {
       "id": "985125",
-      "title": "[VIC] Fever Black Friday Sale – Up to 25% OFF Melbourne Experiences!",
+      "title": "[VIC] Up to 25% OFF Melbourne Experiences @ Fever",
       "url": "https://www.ozbargain.com.au/node/985125",
       "published": "2026-11-23T23:24:38Z",
-      "merchant": "",
+      "merchant": "Fever",
       "category": "Entertainment",
       "description": "20–30 November 2026 ONLY! Fever's Black Friday sale is now live! Save on some of Melbourne's best experiences, from immersive attractions and cocktail bars to Candlelight Concerts and …"
     },
