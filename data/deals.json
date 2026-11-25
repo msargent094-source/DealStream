@@ -1,7 +1,88 @@
 {
   "source": "https://www.ozbargain.com.au/deals/feed",
-  "updatedAt": "2026-11-25T11:40:11.430670Z",
+  "updatedAt": "2026-11-25T13:27:02.854229Z",
   "items": [
+    {
+      "id": "985531",
+      "title": "PetStock: 28% Cashback (Uncapped) @ ShopBack",
+      "url": "https://www.ozbargain.com.au/node/985531",
+      "published": "2026-11-25T13:12:26Z",
+      "merchant": "ShopBack",
+      "category": "Pets",
+      "description": "6pm to midnight. T&C’s at time of posting (check for changes at time of purchase): Petstock reserve the right to cancel affiliate & cashback transactions, when purchases exceed normal …"
+    },
+    {
+      "id": "985530",
+      "title": "eBay: 10% CashBack ($20 Cap) @ ShopBack",
+      "url": "https://www.ozbargain.com.au/node/985530",
+      "published": "2026-11-25T13:06:03Z",
+      "merchant": "ShopBack",
+      "category": "Other",
+      "description": "Good to see some ebay cashbacks popping up. 4-10pm; 10%; $20 cap."
+    },
+    {
+      "id": "985529",
+      "title": "PureVPN: 130% Cashback on 1-Year, 2-Year & Monthly Plans for New Customers (Max 1 Transaction Every 3 Weeks) @ TopCashback AU",
+      "url": "https://www.ozbargain.com.au/node/985529",
+      "published": "2026-11-25T13:02:27Z",
+      "merchant": "TopCashback AU",
+      "category": "Internet",
+      "description": "If your PureVPN order fails to track to your TopCashback account within 48 hours, please request a refund directly from PureVPN and purchase again with a new click. Unfortunately PureVPN cannot …"
+    },
+    {
+      "id": "985528",
+      "title": "[Android, Wear OS] Health Dx: Watch Face - Free (Was $3.39) @Google Play",
+      "url": "https://www.ozbargain.com.au/node/985528",
+      "published": "2026-11-25T12:53:42Z",
+      "merchant": "",
+      "category": "Electrical & Electronics",
+      "description": "The developer is amoledwatchfaces and has a decent catalogue by the looks of it. I've never heard of them before but this face looks quite good and sharp. Free until 3/12/26"
+    },
+    {
+      "id": "985526",
+      "title": "iPhone Air 256GB (Sky Blue) $66.58/Month + 130GB/Month $39/Month for 12 Months ($1,266.96 over 12 Months) Delivered @ Vodafone",
+      "url": "https://www.ozbargain.com.au/node/985526",
+      "published": "2026-11-25T12:51:34Z",
+      "merchant": "Vodafone",
+      "category": "Electrical & Electronics",
+      "description": "Not as good as the previous deal, and it may or may not get any cheaper than this but it's the best price you can get right now"
+    },
+    {
+      "id": "985524",
+      "title": "Retroid Pocket Duo Lite Handheld 4GB+64GB US$99 + US$25 Delivery (~A$188.62) Delivered @ Retroid",
+      "url": "https://www.ozbargain.com.au/node/985524",
+      "published": "2026-11-25T12:26:27Z",
+      "merchant": "Retroid",
+      "category": "Gaming",
+      "description": "Just announced on the Retroid Discord. Slightly cheaper than the recent AliExpress Deal Duo Lite: Processor: Qualcomm Dragonwing QCS6125 CPU: 4*A73@2GHz | 4*A53@1.8GHz GPU: …"
+    },
+    {
+      "id": "985523",
+      "title": "Adidas Performance Hyperboost Euphoria (All Colour-ways) $145.59 + $9.99 Delivery ($0 C&C/ $160 Order) @ Hype DC",
+      "url": "https://www.ozbargain.com.au/node/985523",
+      "published": "2026-11-25T12:23:52Z",
+      "merchant": "Hype DC",
+      "category": "Fashion & Apparel",
+      "description": "20% off at checkout Previous deal was $140 however this one is the 3d printed version which in my opinion looks much better especially for casual wear: https://www.ozbargain.com.au/node/968712"
+    },
+    {
+      "id": "985521",
+      "title": "[PC] Dead Space Remake $8.99 @ Steam",
+      "url": "https://www.ozbargain.com.au/node/985521",
+      "published": "2026-11-25T12:00:47Z",
+      "merchant": "Steam",
+      "category": "Gaming",
+      "description": "Awesome sci-fi survival-horror remake if you haven't played it yet. Equal lowest price ever according to whataryabuyin"
+    },
+    {
+      "id": "985517",
+      "title": "Energizer Max Alkaline AAA Batteries 24pk $14.39 ($12.95 Sub & Save) + Delivery ($0 Prime/$59 Spend) @ Amazon AU (Excl. NT)",
+      "url": "https://www.ozbargain.com.au/node/985517",
+      "published": "2026-11-25T11:41:04Z",
+      "merchant": "Amazon AU (Excl. NT)",
+      "category": "Electrical & Electronics",
+      "description": "If in need for AAA batteries. https://www.ozbargain.com.au/node/984792 Max Plus deal has gone, but now Max are available. These are mid range Energizers. Energizer Alkaline Power < Energizer Max …"
+    },
     {
       "id": "985516",
       "title": "Sofirn HS10 1100lm 4000k and 5000k USB-C Rechargeable LED Headlamp US$12.79 (~A$19.46) Delivered @ Sofirn Store AliExpress",
@@ -13,10 +94,10 @@
     },
     {
       "id": "985514",
-      "title": "42% off Streets of Ours Wall Art - Any Suburb in Australia on Your Wall in 3D!",
+      "title": "42% off 3D Suburb Wall Art $139 + $15 Delivery @ Streets of Ours (was $240)",
       "url": "https://www.ozbargain.com.au/node/985514",
       "published": "2026-11-25T11:31:23Z",
-      "merchant": "",
+      "merchant": "Streets of Ours (was $240)",
       "category": "Home & Garden",
       "description": "Get 42% off any of our 3D suburb wall art for Black Friday! If your suburb is not listed, you can request it using the form or contacting us. We are an Aussie business and all artwork is created and …"
     },
@@ -36,7 +117,7 @@
       "published": "2026-11-25T11:09:20Z",
       "merchant": "Target",
       "category": "Gaming",
-      "description": "Switch 2 PS5 Xbox Series Modern Warfare® 4 pushes the series into darker and more dangerous territory, where consequence and escalation bring long-running storylines to a powerful and emotional …"
+      "description": "Switch 2 — Code in a box PS5 Xbox Series Modern Warfare® 4 pushes the series into darker and more dangerous territory, where consequence and escalation bring long-running storylines to a …"
     },
     {
       "id": "985510",
