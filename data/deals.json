@@ -1,14 +1,59 @@
 {
   "source": "https://www.ozbargain.com.au/deals/feed",
-  "updatedAt": "2026-11-26T07:23:50.995167Z",
+  "updatedAt": "2026-11-26T08:25:00.668885Z",
   "items": [
     {
+      "id": "985702",
+      "title": "Cathay Pacific Black Friday: $100 off Economy, $200 off Premium/Business",
+      "url": "https://www.ozbargain.com.au/node/985702",
+      "published": "2026-11-26T08:10:10Z",
+      "merchant": "",
+      "category": "Travel",
+      "description": "Cathay Pacific's Black Friday sale is now live for departures from Australia. Discounts: $100 off Economy flights with code BF100AU $200 off Premium Economy & Business flights with code …"
+    },
+    {
+      "id": "985700",
+      "title": "Samsung Galaxy A56 5g - $399 + $30 plan on Amaysim",
+      "url": "https://www.ozbargain.com.au/node/985700",
+      "published": "2026-11-26T07:57:20Z",
+      "merchant": "",
+      "category": "Mobile",
+      "description": "Specifications Operating System Android 15 Processor Exynos 1580 Octa-Core 2.9GHz, 2.6GHz, 1.9GHz RAM 8GB Battery 5,000mAh Screen Size 6.7\", Full HD+, Super AMOLED, 120Hz Refresh …"
+    },
+    {
+      "id": "985699",
+      "title": "BIG W Marketplace: 20% Cashback ($50 Cashback Cap, Minimum $250 Spend), [Westpac, Stg, Bom, BSA] 2% Bonus Cashback @ ShopBack",
+      "url": "https://www.ozbargain.com.au/node/985699",
+      "published": "2026-11-26T07:53:44Z",
+      "merchant": "ShopBack",
+      "category": "Other",
+      "description": "20% Cashback is backkk Marketplace (Order Total more than $250): 20% Marketplace (Order Total between $50 - $250): 3.64% Big W Standard CashBack: 0.45% You won't get Cashback on: Purchases …"
+    },
+    {
+      "id": "985698",
+      "title": "40% off Engine Oils @ Autobarn",
+      "url": "https://www.ozbargain.com.au/node/985698",
+      "published": "2026-11-26T07:40:22Z",
+      "merchant": "Autobarn",
+      "category": "Automotive",
+      "description": "40% off Engine Oils at autobarn. For example Penrite C3 5W30 10L is $113.99 (RRP 189.99)"
+    },
+    {
+      "id": "985697",
+      "title": "Blink Outdoor 2K+ Camera & Sync Module Core: 1x $42, 2x $77, 3x $85, 5x $120 + Delivery ($0 Prime/$59 Spend) @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/985697",
+      "published": "2026-11-26T07:38:15Z",
+      "merchant": "Amazon AU",
+      "category": "Electrical & Electronics",
+      "description": "And $38 for another add-on camera. Features: MEET THE LATEST — Blink Outdoor 2K+ is our next-generation DIY wireless smart security camera that delivers an improved visual and audio …"
+    },
+    {
       "id": "985696",
-      "title": "Apple iPad Mini Wi-Fi 64GB (6th Gen) Pink $549.99 @ Costco Wholesale [Membership Required]",
+      "title": "Apple iPad Mini Wi-Fi 64GB (6th Gen) Pink $549.99 Delivered @ Costco Wholesale (Membership Required)",
       "url": "https://www.ozbargain.com.au/node/985696",
       "published": "2026-11-26T07:17:49Z",
-      "merchant": "Costco Wholesale [Membership Required]",
-      "category": "Electrical & Electronics",
+      "merchant": "Costco Wholesale (Membership Required)",
+      "category": "Computing",
       "description": "Cheap way to get an iPad , it is two years old at this stage but an okay price. Space grey available for $680 as well. Description Apple iPad mini Wi-Fi 64GB (6th Gen) Pink The new …"
     },
     {
@@ -22,10 +67,10 @@
     },
     {
       "id": "985694",
-      "title": "Gaming PC: 7700X3D, RX 9070 GRE 12GB, 16GB DDR5, $1999 | Ultra 5 250K Plus, RX 9060 XT 16GB $1899 + | Free Gifts + $40 Delivery",
+      "title": "Gaming PC: 7700X3D, RX 9070 GRE 12GB, 16GB RAM $1999 | Ultra 5 250K+, RX 9060 XT 16GB $1899 + Free Gifts + $40 Del @ Radium PCs",
       "url": "https://www.ozbargain.com.au/node/985694",
       "published": "2026-11-26T07:04:41Z",
-      "merchant": "",
+      "merchant": "Radium PCs",
       "category": "Computing",
       "description": "Hi all, Gabriel here. I run Radium PCs, so this is a post. Day one of our OzBargain Black Friday weekend is two ARROW builds, one AMD and one Intel. Shipping on these is a flat $40 Australia-wide. …"
     },
@@ -49,11 +94,11 @@
     },
     {
       "id": "985689",
-      "title": "(Seconds) Sony Inzone H5 Wireless Gaming Headset $79.05 Delivered ($74.4 with eBay Plus) @ Sony Australia eBay",
+      "title": "[Seconds] Sony Inzone H5 Wireless Gaming Headset $79.05 Delivered ($74.4 with eBay Plus) @ Sony Australia eBay",
       "url": "https://www.ozbargain.com.au/node/985689",
       "published": "2026-11-26T06:36:19Z",
       "merchant": "Sony Australia eBay",
-      "category": "Electrical & Electronics",
+      "category": "Gaming",
       "description": "Mods: 2x White and 8x Black available. Use code: BFSVE15 (non eBay Plus) or BFSVE20 (eBay Plus) Sony is a bit fussy with shipping location apparently: Excludes Northern Territory, Perth Metro, QLD …"
     },
     {
@@ -103,7 +148,7 @@
     },
     {
       "id": "985683",
-      "title": "10% off Everything $50+ (Auto Applied) + Free Delivery @ WOW Shopping",
+      "title": "10% off Sitewide with $50 Order + Free Delivery @ WOW Shopping",
       "url": "https://www.ozbargain.com.au/node/985683",
       "published": "2026-11-26T06:06:55Z",
       "merchant": "WOW Shopping",
@@ -112,7 +157,7 @@
     },
     {
       "id": "985682",
-      "title": "DeWALT 8mm 18V XR Li-Ion Brushless Router $199, 18V XR Compact Osc. Multi-Tool $149 + Bonus 5.0AH Battery Twin Pack @ Bunnings",
+      "title": "DeWALT 8mm 18V XR Li-Ion Brushless Router $199, Compact Osc. Multi-Tool $149 + Bonus 5.0AH Battery Twin Pack Instore @ Bunnings",
       "url": "https://www.ozbargain.com.au/node/985682",
       "published": "2026-11-26T06:05:34Z",
       "merchant": "Bunnings",
