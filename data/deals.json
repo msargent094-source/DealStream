@@ -1,7 +1,79 @@
 {
   "source": "https://www.ozbargain.com.au/deals/feed",
-  "updatedAt": "2026-11-27T19:24:19.611718Z",
+  "updatedAt": "2026-11-27T22:03:07.632629Z",
   "items": [
+    {
+      "id": "986182",
+      "title": "Up to 64% off Sukin (500mL Shampoo $7.20, Body Wash $5.50, 2x500mL Pack $16) + Delivery ($0 with Prime/ $59 Spend) @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/986182",
+      "published": "2026-11-27T21:55:58Z",
+      "merchant": "Amazon AU",
+      "category": "Health & Beauty",
+      "description": "A large selection of Sukin haircare, skincare, and body care is discounted on Amazon AU, with over 35 items sitting at 50–64% off RRP. Standouts include the Sensitive Scalp Care Shampoo 500mL for …"
+    },
+    {
+      "id": "986181",
+      "title": "Apple Online & Apple Education Store: 6% Cashback (Uncapped, Exclusions Apply) @ TopCashback AU",
+      "url": "https://www.ozbargain.com.au/node/986181",
+      "published": "2026-11-27T21:47:36Z",
+      "merchant": "TopCashback AU",
+      "category": "Electrical & Electronics",
+      "description": "TopCashback AU is now offering 6% cashback with no dollar cap on eligible purchases directly from the Apple Australia Online Store and Apple Education Store. The previous 10% offer with a $200 cap …"
+    },
+    {
+      "id": "986180",
+      "title": "AMD RYZEN 7 9800X3D $575.03 (RRP $821) Delivered @ Amazon DE via AU",
+      "url": "https://www.ozbargain.com.au/node/986180",
+      "published": "2026-11-27T21:45:54Z",
+      "merchant": "Amazon DE via AU",
+      "category": "Computing",
+      "description": "Amazon Black Friday. Not ATL but seems reasonable compared to recent deals. Cheapest local I could find was $599 at Computer Alliance or $609 at …"
+    },
+    {
+      "id": "986179",
+      "title": "[iOS, iPadOS] Spendscript Offline Expense, Credit Card & Gift Card Tracker – Lifetime Pro $0 (Was $79.99) @ App Store",
+      "url": "https://www.ozbargain.com.au/node/986179",
+      "published": "2026-11-27T21:40:06Z",
+      "merchant": "App Store",
+      "category": "Financial",
+      "description": "Hi OzBargain — solo dev in Brisbane here. I've dropped Lifetime Pro for my offline finance app Spendscript (iOS/iPadOS) from $79.99 to $0.00 until Cyber Monday (30 Nov). One-off permanent …"
+    },
+    {
+      "id": "986177",
+      "title": "Breville The Barista Express Salted Liquorice $518 @ The Good Guys",
+      "url": "https://www.ozbargain.com.au/node/986177",
+      "published": "2026-11-27T21:18:24Z",
+      "merchant": "The Good Guys",
+      "category": "Dining & Takeaway",
+      "description": "Amazing machine for this price. I have this machine and onced dialled it its perfect for how I like my coffee. Listed price is $538 but clicking on price beat brings it down to $528. If you use …"
+    },
+    {
+      "id": "986176",
+      "title": "[Black Friday] Polk Audio Signa S4 Dolby Atmos Soundbar $388 (Was $799 – Save $411, 51% off @ Sound United via Kogan",
+      "url": "https://www.ozbargain.com.au/node/986176",
+      "published": "2026-11-27T21:07:14Z",
+      "merchant": "Sound United via Kogan",
+      "category": "Electrical & Electronics",
+      "description": "Hey OzBargain! We've got some great deals on Polk Audio and Denon products currently available through our Kogan store! Whether you're looking to upgrade your TV audio, build a more …"
+    },
+    {
+      "id": "986175",
+      "title": "Dyson Purifier Cool Pc 1 $399 Delivered @ Dyson AU",
+      "url": "https://www.ozbargain.com.au/node/986175",
+      "published": "2026-11-27T20:41:05Z",
+      "merchant": "Dyson AU",
+      "category": "Electrical & Electronics",
+      "description": "Seems decent price. It would be good to know if it stacks with 20% cash back? @tightarse"
+    },
+    {
+      "id": "986174",
+      "title": "[iOS] Fardel Pro Lifetime A$59.99 (Was A$129.99) @ Apple App Store",
+      "url": "https://www.ozbargain.com.au/node/986174",
+      "published": "2026-11-27T20:08:08Z",
+      "merchant": "Apple App Store",
+      "category": "Mobile",
+      "description": "Associated: I'm the developer of Fardel. Fardel is an iPhone (and Apple Watch) travel planner: packing lists with reusable kits, a day-by-day plan on a map, bookings, a budget in the currency …"
+    },
     {
       "id": "986172",
       "title": "$998 Nikon Z5 at Harvey Norman",
@@ -13,7 +85,7 @@
     },
     {
       "id": "986170",
-      "title": "tomtoc Travel Backpack 38L, 3DAirMesh Back + 3D AirMesh Shoulders , 3-Column Lumbar TSA Carry-on $119.99 Delivered @ Amazon AU",
+      "title": "tomtoc Navigator-T67 38L Travel Backpack $119.99 Delivered @ Amazon AU",
       "url": "https://www.ozbargain.com.au/node/986170",
       "published": "2026-11-27T16:27:50Z",
       "merchant": "Amazon AU",
@@ -31,7 +103,7 @@
     },
     {
       "id": "986167",
-      "title": "Lexar Play X 1TB M.2 TLC PCIe 4.0 NVMe SSD $189 (was $299) Delivered @ Amazon AU",
+      "title": "Lexar Play X 1TB M.2 TLC PCIe 4.0 NVMe SSD $189 (Was $299) Delivered @ Amazon AU",
       "url": "https://www.ozbargain.com.au/node/986167",
       "published": "2026-11-27T14:41:37Z",
       "merchant": "Amazon AU",
@@ -40,7 +112,7 @@
     },
     {
       "id": "986166",
-      "title": "Jlab Jbuds Mini True Wireless Earbuds - Black, $48 + Delivery ($0 C&C) @ Harvey Norman",
+      "title": "JLab JBuds Mini True Wireless Earbuds - Black $48 + Delivery ($0 C&C/In-Store) @ Harvey Norman",
       "url": "https://www.ozbargain.com.au/node/986166",
       "published": "2026-11-27T14:19:19Z",
       "merchant": "Harvey Norman",
@@ -76,7 +148,7 @@
     },
     {
       "id": "986162",
-      "title": "Lenovo LOQ 15IRX9 Gaming Laptop and LOQ 27-10 27\" Monitor Bundle… $1,499 Delivered @ Amazon AU",
+      "title": "Lenovo LOQ 15IRX9 Gaming Laptop + LOQ 27-10 27\" Monitor Bundle $1,499 Delivered @ Amazon AU",
       "url": "https://www.ozbargain.com.au/node/986162",
       "published": "2026-11-27T13:47:20Z",
       "merchant": "Amazon AU",
@@ -85,7 +157,7 @@
     },
     {
       "id": "986161",
-      "title": "20% Off Full Price Umbrellas (FREE Shipping Australia-wide) @ Davek NY",
+      "title": "20% off Full Price Umbrellas + Free Delivery @ Davek NY",
       "url": "https://www.ozbargain.com.au/node/986161",
       "published": "2026-11-27T13:44:29Z",
       "merchant": "Davek NY",
@@ -125,7 +197,7 @@
       "url": "https://www.ozbargain.com.au/node/986153",
       "published": "2026-11-27T12:41:39Z",
       "merchant": "JB Hi-Fi",
-      "category": "Electrical & Electronics",
+      "category": "Computing",
       "description": "Decent deal on the Logitech G PRO X SUPERLIGHT 2c, currently $100 off at JB Hi-Fi. This is the newer compact version of the SUPERLIGHT 2, suitable for those with smaller hands or who prefer a …"
     },
     {
@@ -175,10 +247,10 @@
     },
     {
       "id": "986145",
-      "title": "Harvey Norman : Optus Mobile & Data Plan - Receive a $800 Harvey Norman Gift Card",
+      "title": "Optus $69/mth SIM Only Plan 24 Months + $800 Harvey Norman Gift Card (In-Store) @ Harvey Norman",
       "url": "https://www.ozbargain.com.au/node/986145",
       "published": "2026-11-27T12:09:39Z",
-      "merchant": "",
+      "merchant": "Harvey Norman",
       "category": "Mobile",
       "description": "Eg : $79 36 month SIM Only plan has $1500 Gift Card Harvey Norman Gift Card Offers Details : https://www.harveynorman.com.au/optus-byo#sectionVoiceSixtyF… . Though it doesn't show online …"
     },
