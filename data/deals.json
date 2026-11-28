@@ -1,28 +1,208 @@
 {
   "source": "https://www.ozbargain.com.au/deals/feed",
-  "updatedAt": "2026-11-28T03:50:40.368206Z",
+  "updatedAt": "2026-11-28T06:27:27.461943Z",
   "items": [
     {
+      "id": "986281",
+      "title": "Google Pixel Watch 2 LTE $47, Pixel Watch 3 LTE $147 + Delivery ($0 C&C/In-Store) @ JBHiFi",
+      "url": "https://www.ozbargain.com.au/node/986281",
+      "published": "2026-11-28T06:19:53Z",
+      "merchant": "JBHiFi",
+      "category": "Fashion & Apparel",
+      "description": "Spotted these on the JB website. On clearance with limited stock. Pixel Watch 2 LTE (41mm) - Matte Black, Obsidian band: $47 - Polished Silver, Bay band: $47 Pixel Watch 3 LTE 41mm - Silver, Rose …"
+    },
+    {
+      "id": "986280",
+      "title": "LG 48 Inch OLED AI B6 4K Smart TV OLED48B6PSA $1,139.98 @ Costco Wholesale",
+      "url": "https://www.ozbargain.com.au/node/986280",
+      "published": "2026-11-28T06:11:29Z",
+      "merchant": "Costco Wholesale",
+      "category": "Electrical & Electronics",
+      "description": "LG 48\" B6 - Retravision and Amazon have the same model in stock for a similar price so you should be able to pricebeat with The Good Guys through live chat (it's not showing when you click …"
+    },
+    {
+      "id": "986279",
+      "title": "Canon EOS R5 II Mirrorless Camera (Bonus $500 Canon Cashback) $4,891.55 + $8.95 Delivery ($0 C&C) @ digiDirect",
+      "url": "https://www.ozbargain.com.au/node/986279",
+      "published": "2026-11-28T06:02:02Z",
+      "merchant": "digiDirect",
+      "category": "Electrical & Electronics",
+      "description": "I thought this was worthy of it's own post for visibility. Credit to Buy2Much for posting original 5% deal. When combined with TopCashback Australia and Canon Cash Back out of pocket is …"
+    },
+    {
+      "id": "986277",
+      "title": "AskDD AI Sales Agent (All Plans) - 50% Off for 12 Months + 30-Day Free Trial (e.g. Growth Plan $25/mo) @ AskDD",
+      "url": "https://www.ozbargain.com.au/node/986277",
+      "published": "2026-11-28T05:54:24Z",
+      "merchant": "AskDD",
+      "category": "Computing",
+      "description": "Hi OzBargain, For Black Friday, we are offering 50% off all AskDD plans for your first 12 months, plus a 30-day free trial (no credit card required to start) with code BF2026. What is AskDD? AskDD …"
+    },
+    {
+      "id": "986276",
+      "title": "KitchenAid Classic KSM45 Stand Mixer White - 4.3L Tilt-Head, 10 … $395 (RRP $799) Delivered @ Amazon AU",
+      "url": "https://www.ozbargain.com.au/node/986276",
+      "published": "2026-11-28T05:52:38Z",
+      "merchant": "Amazon AU",
+      "category": "Home & Garden",
+      "description": "Saw this, thought it was a great price. Features: Durable tilt-head stand mixer was built to last and features 10 speeds to gently knead Thouroughly mix and whip ingredients for a wide …"
+    },
+    {
+      "id": "986275",
+      "title": "[Windows] SignalNZB Pro: 1 Year Free (Normally US$25) — No Credit Card or Auto-Renewal @ SignalNZB",
+      "url": "https://www.ozbargain.com.au/node/986275",
+      "published": "2026-11-28T05:51:14Z",
+      "merchant": "SignalNZB",
+      "category": "Computing",
+      "description": "I'm the developer of SignalNZB and am associated with this offer. For Black Friday, I'm offering one year of SignalNZB Pro free, starting when you claim. Pro normally costs US$25 per year. …"
+    },
+    {
+      "id": "986274",
+      "title": "HP OMEN 45L Gaming Desktop Ultra 7 265K 32GB 2TB HDD+2TB SSD RTX 5080 $4399 @HP on Ebay Delivered",
+      "url": "https://www.ozbargain.com.au/node/986274",
+      "published": "2026-11-28T05:49:27Z",
+      "merchant": "",
+      "category": "Computing",
+      "description": "HP OMEN 45L Gaming Desktop Ultra 7 265K 32GB 2TB HDD+2TB SSD RTX 5080 credit to ….? let me @hotrod01"
+    },
+    {
+      "id": "986273",
+      "title": "Refurbished (Grade B) HP EliteBook 830 G8 Intel i7 1185g7 16GB RAM 512GB SSD Win11 $279 Delivered @ Australian Computer Traders",
+      "url": "https://www.ozbargain.com.au/node/986273",
+      "published": "2026-11-28T05:46:56Z",
+      "merchant": "Australian Computer Traders",
+      "category": "Computing",
+      "description": "I was checking the Australian Computer Traders website and noticed this deal is back. It's a pretty good deal at this price! I'm not sure about the condition of the actual laptops, though. …"
+    },
+    {
+      "id": "986271",
+      "title": "Dreo Air Purifier 539s $127.55 ($120.05 eBay Plus) Delivered @ eBay",
+      "url": "https://www.ozbargain.com.au/node/986271",
+      "published": "2026-11-28T05:20:12Z",
+      "merchant": "eBay",
+      "category": "Home & Garden",
+      "description": "Well rated basic air purifier for small-medium sized rooms. Review from rtings; https://www.rtings.com/air-purifier/reviews/dreo/air-purifie… Original Coupon Deal"
+    },
+    {
+      "id": "986269",
+      "title": "Ozito PXC 36V (2x18V) 420mm (16\") Brushless Steel Deck Lawn Mower 4.0Ah Kit $399 C&C / In-Store @ Bunnings Warehouse",
+      "url": "https://www.ozbargain.com.au/node/986269",
+      "published": "2026-11-28T05:11:50Z",
+      "merchant": "Bunnings Warehouse",
+      "category": "Home & Garden",
+      "description": "Not a bad price for steel-deck brushless Ozito PXC mower kit with 2x 4.0Ah batteries we've seen in a while (for comparison, the 460mm steel-deck kit is $479, and the 380mm plastic-deck brushless …"
+    },
+    {
+      "id": "986268",
+      "title": "Gaming PC, BYO GPU: Intel 270K+, 32GB DDR5 RAM, 1TB SSD, 850W PSU $1699 | AMD 9950X3D $2249 + $40 Delivery (VIC C&C) @ RadiumPCs",
+      "url": "https://www.ozbargain.com.au/node/986268",
+      "published": "2026-11-28T05:09:56Z",
+      "merchant": "RadiumPCs",
+      "category": "Computing",
+      "description": "Hi all, SORRY I COMPLETELY FORGOT TO POST YESTERDAY Gabriel from Radium PCs again. I run the store, so this is a post. Day two is for people who already have a graphics card. These two PCs ship …"
+    },
+    {
+      "id": "986267",
+      "title": "Kmart Reformer Pilates Machine $229",
+      "url": "https://www.ozbargain.com.au/node/986267",
+      "published": "2026-11-28T05:09:36Z",
+      "merchant": "",
+      "category": "Sports & Outdoors",
+      "description": "Black Friday Offer. Limited stock and offers available while stock lasts. This product may not be available in stores in North Queensland. Use the “Find in store” locator above to check …"
+    },
+    {
+      "id": "986266",
+      "title": "Free Chai Blend + 50g Masala Salt (Worth $23.90) with $45 Spend, Plus 2 Chai Glasses at $90 @ Chailicious",
+      "url": "https://www.ozbargain.com.au/node/986266",
+      "published": "2026-11-28T04:54:10Z",
+      "merchant": "Chailicious",
+      "category": "Groceries",
+      "description": "Our Black Friday free-gift offer is on through Monday 30 November at Chailicious. Spend $45+ on eligible items and get a blend of your choice and a 50 g Masala Salt, worth $23.90 together. Spend …"
+    },
+    {
+      "id": "986264",
+      "title": "EZVIZ EP3X Pro Doorbell Pack With SD7 Smart Screen & Solar Panel $95 + Delivery ($0 C&C/ in-Store) @ JB Hi-Fi",
+      "url": "https://www.ozbargain.com.au/node/986264",
+      "published": "2026-11-28T04:45:35Z",
+      "merchant": "JB Hi-Fi",
+      "category": "Electrical & Electronics",
+      "description": "Doorbell and Smart Screen together at $95.. 30% of the current sale price for both items individually.. Pricing error perhaps?? EZVIZ EP3X Pro Doorbell & Solar Panel (on sale @ $158, RRP …"
+    },
+    {
+      "id": "986263",
+      "title": "HIFIMAN Ananda Stealh Headphones US$131.18 (~A$198) [Elite] US$122.67 (~A$185.16) w/ PayPal Shipped @ HIFIMAN Local AliExpress",
+      "url": "https://www.ozbargain.com.au/node/986263",
+      "published": "2026-11-28T04:44:01Z",
+      "merchant": "HIFIMAN Local AliExpress",
+      "category": "Electrical & Electronics",
+      "description": "A new all time low price on these previously popular HIFIMAN headphones and arguably better than the Edition XS depending who you ask. Stack with 30% cashback at TopCashback for A$50 back and this is …"
+    },
+    {
+      "id": "986262",
+      "title": "AMD Ryzen 9 9950x3d Box $877.39 Delivered @ Amazon AU via Amazon UK",
+      "url": "https://www.ozbargain.com.au/node/986262",
+      "published": "2026-11-28T04:43:42Z",
+      "merchant": "Amazon AU via Amazon UK",
+      "category": "Computing",
+      "description": "Not ATL, but a good price in line with prev deals. I've been holding off for a while, but might upgrade from my 7800X3D at this price. Features: Max. Boost Clock: Up to 5.7GHz Base …"
+    },
+    {
+      "id": "986259",
+      "title": "3TB Usenet Block with Blocknews US$15.99 ($24.14)",
+      "url": "https://www.ozbargain.com.au/node/986259",
+      "published": "2026-11-28T04:23:33Z",
+      "merchant": "",
+      "category": "Internet",
+      "description": "A few usenet deals around but none for blocks. This is a good deal, no expiry, and good to pair with newshosting or similar, or just use for low volume"
+    },
+    {
+      "id": "986258",
+      "title": "Penrite Enviro+ GF-S 5W-30 Engine Oil 5L $54.99 + Delivery ($0 C&C/ in-Store) @ Autobarn",
+      "url": "https://www.ozbargain.com.au/node/986258",
+      "published": "2026-11-28T04:23:25Z",
+      "merchant": "Autobarn",
+      "category": "Automotive",
+      "description": "Fully synthetic, suits the following specifications, and more API SM API SN API SN Plus API SP API SP Resource Conserving API SQ Resource Conserving ILSAC GF-3 ILSAC GF-4 ILSAC GF-5 ILSAC …"
+    },
+    {
+      "id": "986254",
+      "title": "15% off Site Wide @ Liquorland",
+      "url": "https://www.ozbargain.com.au/node/986254",
+      "published": "2026-11-28T03:49:15Z",
+      "merchant": "Liquorland",
+      "category": "Alcohol",
+      "description": "15% off site wide. Works for items on sale eg Philter XPA case $52 down to $44.20 Tinnies case on special $42 down to $35.70"
+    },
+    {
+      "id": "986253",
+      "title": "David Jones: 18% Cashback Sitewide ($450 Cap) on ShopBack",
+      "url": "https://www.ozbargain.com.au/node/986253",
+      "published": "2026-11-28T03:49:04Z",
+      "merchant": "",
+      "category": "Other",
+      "description": "Getting some Christmas shopping done and noticed this: Available until 11:59pm. You won't get Cashback on: CHANEL, DIOR, Christian Dior, Miele Order made by David Jones staffs Purchases made …"
+    },
+    {
       "id": "986252",
-      "title": "Logitech G Astro A20x Playsync Wireless Gaming Headset Black $149.99 Delivered @ Costco (Membership Required)",
+      "title": "Logitech G Astro A20 X Playsync Wireless Gaming Headset Black $149.99 Delivered @ Costco (Membership Required)",
       "url": "https://www.ozbargain.com.au/node/986252",
       "published": "2026-11-28T03:47:06Z",
       "merchant": "Costco (Membership Required)",
       "category": "Gaming",
-      "description": "Came across Logitech G Astro A20X PLAYSYNC Wireless Gaming Headset Black member only pricing when logged into Costco it's selling for $149.99 delivered. Amazon UK import that is currently …"
+      "description": "Came across Logitech G Astro A20 X PLAYSYNC Wireless Gaming Headset Black member only pricing when logged into Costco it's selling for $149.99 delivered. Amazon UK import that is currently …"
     },
     {
       "id": "986251",
-      "title": "Omnipad Tablet + Keyboard, 12\", Snapdragon 8 Gen 3 8GB 256GB Wi-Fi, 2K sRGB Panel, $449 Delivered (RRP $999) @ HP eBay",
+      "title": "HP Omnipad Tablet + Keyboard, 12\", Snapdragon 6 Gen 3 8GB 256GB Wi-Fi, 2K sRGB Panel, $449 Delivered (RRP $999) @ HP eBay",
       "url": "https://www.ozbargain.com.au/node/986251",
       "published": "2026-11-28T03:44:46Z",
       "merchant": "HP eBay",
       "category": "Computing",
-      "description": "Found this deal on HP's eBay store. I didn't even know HP made Android tablets. 128gb version is $50 cheaper The HP OmniPad 12 is powered by a Snapdragon 8 Gen 3 processor and comes with …"
+      "description": "Found this deal on HP's eBay store. I didn't even know HP made Android tablets. 128gb version is $50 cheaper The HP OmniPad 12 is powered by a Snapdragon 6 Gen 3 processor and comes with …"
     },
     {
       "id": "986250",
-      "title": "Spotify Premium $7.99 for 2 months",
+      "title": "Spotify Premium Individual $7.99 for 2 months (Returning Customer)",
       "url": "https://www.ozbargain.com.au/node/986250",
       "published": "2026-11-28T03:44:41Z",
       "merchant": "",
@@ -49,12 +229,12 @@
     },
     {
       "id": "986243",
-      "title": "AmEx Statement Credit: Spend A$1,000 or More and Get A$100 Back, Every Time @ American Express",
+      "title": "AmEx Statement Credit: Spend $1,000 or More at LG and Get $100 Back, Every Time @ American Express",
       "url": "https://www.ozbargain.com.au/node/986243",
       "published": "2026-11-28T03:20:15Z",
       "merchant": "American Express",
       "category": "Electrical & Electronics",
-      "description": "Spend AU$1,000 or more and get AU$100 back, every time Expires 31/12|26 • Online only Save the Offer to your eligible Card and spend AU$1,000 or more, in one transaction, online only at …"
+      "description": "Spend AU$1,000 or more and get AU$100 back, every time at LG edit: apologies for title error before (not mentioning brand — copy-paste error). Only a mod can add the targeted flag though, …"
     },
     {
       "id": "986242",
